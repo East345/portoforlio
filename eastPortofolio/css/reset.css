@@ -1,0 +1,54 @@
+@charset "utf-8";
+@import url(../css/font.css);
+
+header, body, footer, nav, aside, article, section, ul, ol, li, dl, dt, dd, form, input, div, span, a, p, img, em, strong, h1, h2, h3{
+  margin:0;
+  padding:0;
+}
+header, footer, nav, aside, article, section{
+  display:block;
+}
+html{
+  font-size: 14px;
+}
+
+@media only all and (min-width:768px){
+  html{
+    font-size:13px;
+  }
+}
+@media only all and (min-width:320px) and(max-width:767px){
+  html{
+    font-size:12px;
+  }
+}
+body, input, select{
+  color:#222;
+  font-size: 1rem;
+  font-family: 'Nanum', '나눔고딕', '돋움', 'dotum', sans-serif;
+}
+
+ul, ol{
+  list-style: none;
+}
+em,i, address{
+  font-style: normal;
+}
+strong, b{
+  font-weight:400;
+}
+img, fieldset{
+  border:0 none;
+}
+img, input, select{
+  vertical-align: middle;
+}
+
+a:link, a:visited{
+  color:#222;
+  text-decoration: none;
+}
+a:hover, a:active, a:focus{
+  color:#222;
+  text-decoration: underline;
+}

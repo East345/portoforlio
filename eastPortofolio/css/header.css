@@ -1,0 +1,91 @@
+#wrapper{
+  position:relative;
+  width:100%;
+}
+
+.header_ {
+  position:relative;
+  width:100%;
+  z-index: 999;
+}
+.header_ .inner{
+  padding-bottom:1%;
+}
+
+.logo a img{
+  width: 83px;
+  height:26px;
+}
+.header_ .nav_toggle_btn{
+  cursor:pointer;
+  position:relative;
+  z-index:3;
+}
+
+.nav_toggle_btn span{
+  display: block;
+  width:25px;
+  height: 5px;
+  background-color: #222;
+  margin: 3px;
+  border-radius: 1px;
+  transition: all 0.2s ease;
+  
+}
+.nav_toggle_btn:hover span:nth-child(2){
+  width:15px;
+}
+
+.nav_toggle_btn.btn_clicked span:nth-child(1){
+  transform:rotate(45deg);
+  margin-top: 8px;
+}
+.nav_toggle_btn.btn_clicked span:nth-child(2){
+  display:none;
+}
+.nav_toggle_btn.btn_clicked span:nth-child(3){
+  transform:rotate(135deg);
+  margin-top: -8px;
+}
+
+.header_ .gnb_{
+  position:absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100vh;
+  background-color: #fff5e9;
+  z-index:2;
+}
+.gnb_ .nav_list{
+  width:100%;
+  text-align: center;
+  margin: 28vh 0;
+}
+.nav_list > li{
+  padding:10px 0;
+}
+.nav_list > li > a{
+  font-size: 2.5rem;
+  font-weight: 900;
+  text-decoration: none;
+  position:relative;
+  padding:10px 0px 10px 40px;
+}
+.nav_list > li > a::before{
+  content: '';
+  width:30px;
+  height:30px;
+  background: url(../images/nav_hover_sun_img.png) no-repeat 0 0 / cover;
+  position: absolute;
+  top:50%;
+  left:0;
+  transform: translateY(-50%);
+  opacity: 0;
+}
+.nav_list > li > a:hover{ 
+  color:orange;
+}
+.nav_list > li > a:hover:before{ 
+  opacity: 1;
+}
