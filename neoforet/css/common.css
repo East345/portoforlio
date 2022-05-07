@@ -1,0 +1,11 @@
+.clearfix:after {
+  content: '';
+  display: block;
+  width: 100%;
+  clear: both;
+}
+
+.none {
+  display: none;
+}
+/*# sourceMappingURL=common.css.map */

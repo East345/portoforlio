@@ -1,0 +1,90 @@
+@charset "UTF-8";
+/* _(언더바)를 붙여서 작성해야 파일단위로 분리되어 컴파일되지 않음(변수만 저장해놓을 파일이기 때문에 별도의 CSS파일로 컴파일 될 필요가 없음) */
+@font-face {
+  font-family: 'Nanum';
+  font-weight: 400;
+  src: url("../font/NanumGothic.eot");
+  src: url("../font/NanumGothic.eot?#iefix") format("embedded-opentype"), url("../font/NanumGothic.woff") format("woff"), url("../font/NanumGothic.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: 'NanumBold';
+  font-weight: 600;
+  src: url("../font/NanumGothicBold.eot");
+  src: url("../font/NanumGothicBold.eot?#iefix") format("embedded-opentype"), url("../font/NanumGothicBold.woff") format("woff"), url("../font/NanumGothicBold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: 'NanumEX';
+  font-weight: 900;
+  src: url("../font/NanumGothicExtraBold.eot");
+  src: url("../font/NanumGothicExtraBold.eot?#iefix") format("embedded-opentype"), url("../font/NanumGothicExtraBold.woff") format("woff"), url("../font/NanumGothicExtraBold.ttf") format("truetype");
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+header, body, footer, nav, aside, article, section, form, ul, li, ol, dl, dt, dd, input, img, div, span, a, p, strong, em, h1, h2, h3, button, video {
+  margin: 0px;
+  padding: 0px;
+  color: #222;
+}
+
+header, main, footer, nav, aside, article, section {
+  display: block;
+}
+
+html {
+  font-size: 13.5px;
+}
+
+@media all and (max-width: 1024px) {
+  html {
+    font-size: 13px;
+  }
+}
+
+@media all and (max-width: 768px) {
+  html {
+    font-size: 12.5px;
+  }
+}
+
+@media all and (max-width: 320px) {
+  html {
+    font-size: 12px;
+  }
+}
+
+body, input, select {
+  font-size: 1rem;
+  font-family: 'Nanum', '나눔고딕', '돋움', 'dotum', sans-serif;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+em, address, i {
+  font-style: normal;
+}
+
+strong, b {
+  font-weight: 400;
+}
+
+img, fieldset {
+  border: 0 none;
+}
+
+img, input, select {
+  vertical-align: middle;
+}
+
+a:link, a:visited, a:hover, a:active, a:focus {
+  color: #222;
+  text-decoration: none;
+}
+/*# sourceMappingURL=reset.css.map */

@@ -1,0 +1,9 @@
+/* _(언더바)를 붙여서 작성해야 파일단위로 분리되어 컴파일되지 않음(변수만 저장해놓을 파일이기 때문에 별도의 CSS파일로 컴파일 될 필요가 없음) */
+$resetValue:0px;
+$initialColor:#222;
+$size: 100%;
+$wrapSize: 100%;
+$rel:relative;
+$ab:absolute;
+$fl:left;
+$fr:right;

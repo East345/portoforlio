@@ -1,0 +1,2937 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta property="og:url" content="http://east345.dothome.co.kr/chungjungoneShop/index.html">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Chungjungone eShop">
+  <meta property="og:image" content="images/logo.png">
+  <meta property="og:description" content="Chungjungone eShop 웹 사이트입니다.">
+  <title>Chungjungone eShop</title>
+  <link rel="icon" href="images/shortLogo.ico">
+  <link rel="apple-touch-icon" href="images/shortLogo.ico">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  <script src="js/main.js" defer></script>
+</head>
+
+<body>
+  <div id="skip_menu">
+    <a href="#container">본문바로가기</a>
+    <a href="#gnb">주메뉴바로가기</a>
+  </div>
+
+  <div id="wrapper">
+    <header class="header_container">
+      
+      <div class="intro_header_wrap clearfix">
+        <ul class="intro1_wrap fl">
+          <li><a href=javascript:void(0)><i class="fa-solid fa-diamond"></i>신제품 구경하기</a></li>
+          <li><a href=javascript:void(0)><i class="fa-solid fa-store"></i>브랜드관</a></li>
+          <li><a href=javascript:void(0)><i class="fa-solid fa-truck"></i>정기배송</a></li>
+          <li><a href=javascript:void(0)><i class="fa-brands fa-creative-commons-nc"></i>무료배송</a></li>
+          <li><a href=javascript:void(0)><i class="fa-solid fa-boxes-stacked"></i>대량주문문의</a></li>
+          <li><a href=javascript:void(0)><i class="fa-solid fa-gift"></i>상품권</a></li>
+        </ul>
+
+        <ul class="intro2_wrap fr">
+          <li><a href=javascript:void(0)>로그인</a></li>
+          <li><a href=javascript:void(0)>회원가입</a></li>
+          <li><a href=javascript:void(0)>고객센터</a></li>
+          <li><a href=javascript:void(0)>배송안내</a></li>
+        </ul>
+      </div>
+      
+      <div class="logo_section_wrap clearfix">
+        <section class="logo_search_info_wrap">
+          <h1 class="logo fl">청정원로고</h1>
+          <form action="#" method="post" class="product_search_wrap fl" name="searchfrm">
+            <input type="text" name="inval" class="input_val">
+            <button class="search_inner_btn" type="submit">검색하기</button>
+          </form>
+          <div class="client_need_info_wrap fr">
+            <span class="go_mypage"><a href="">마이페이지로 이동</a></span>
+            <span class="go_delivery"><a href="">배송페이지로 이동</a></span>
+            <span class="go_shopping_cart"><a href="">장바구니로 이동</a></span>
+          </div>
+        </section>
+      </div>
+
+      <nav class="header_nav_wrap" id="gnb">
+        <div class="header_nav clearfix">
+          <div class="all_cate_click_area fl" onclick="clickNav(); return false">
+            <a href="#all_category_wrap">
+              <span class="cate_bar_wrap fl">
+                <span class="cate_bar cate_bar1"></span>
+                <span class="cate_bar cate_bar2"></span>
+                <span class="cate_bar cate_bar3"></span>
+              </span>
+              <span class="all_category_text fl">전체카테고리</span>
+            </a>
+          </div>
+
+          <div class="all_category_wrap invisible clearfix">
+            <ul class="depth1_category">
+              <li>
+                <a href="javascript:void(0)">두부&middot;콩나물&middot;달걀</a>
+                <div class="depth2_category_wrap">
+                  <ul class="depth2_category">
+                    <li><a href="javascript:void(0)">두부</a></li>
+                    <li><a href="javascript:void(0)">콩나물</a></li>
+                    <li><a href="javascript:void(0)">유부</a></li>
+                    <li><a href="javascript:void(0)">달걀</a></li>
+                    <li><a href="javascript:void(0)">나또</a></li>
+                  </ul>
+                  <div class="depth2_category_img_wrap">
+                    <img class="depth2_category_img" src="images/depth2_category_img1.png" alt="두부 콩나물 달걀">
+                  </div>
+                </div>
+              </li>
+              <li>
+                <a href="javascript:void(0)">과일&middot;채소&middot;곡식</a>
+                <div class="depth2_category_wrap">
+                  <ul class="depth2_category">
+                    <li><a href="javascript:void(0)">과일</a></li>
+                    <li><a href="javascript:void(0)">채소</a></li>
+                    <li><a href="javascript:void(0)">쌀</a></li>
+                    <li><a href="javascript:void(0)">견과</a></li>
+                    <li><a href="javascript:void(0)">선식</a></li>
+                  </ul>
+                  <div class="depth2_category_img_wrap">
+                    <img class="depth2_category_img" src="images/depth2_category_img2.png" alt="과일 채소 곡식">
+                  </div>
+                </div>
+              </li>
+              <li>
+                <a href="javascript:void(0)">만두&middot;피자&middot;떡볶이</a>
+                <div class="depth2_category_wrap">
+                  <ul class="depth2_category">
+                    <li><a href="javascript:void(0)">만두</a></li>
+                    <li><a href="javascript:void(0)">피자</a></li>
+                    <li><a href="javascript:void(0)">떡볶이</a></li>
+                    <li><a href="javascript:void(0)">핫도그</a></li>
+                  </ul>
+                  <div class="depth2_category_img_wrap">
+                    <img class="depth2_category_img" src="images/depth2_category_img3.png" alt="만두 피자 떡볶이">
+                  </div>
+                </div>
+              </li>
+              <li>
+                <a href="javascript:void(0)">밥&middot;면&middot;간편식</a>
+                <div class="depth2_category_wrap">
+                  <ul class="depth2_category">
+                    <li><a href="javascript:void(0)">밥</a></li>
+                    <li><a href="javascript:void(0)">라면</a></li>
+                    <li><a href="javascript:void(0)">국수</a></li>
+                    <li><a href="javascript:void(0)">파스타</a></li>
+                    <li><a href="javascript:void(0)">냉동식품</a></li>
+                    <li><a href="javascript:void(0)">죽</a></li>
+                    <li><a href="javascript:void(0)">씨리얼</a></li>
+                    <li><a href="javascript:void(0)">샐러드</a></li>
+                    <li><a href="javascript:void(0)">밀키트</a></li>
+                  </ul>
+                  <div class="depth2_category_img_wrap">
+                    <img class="depth2_category_img" src="images/depth2_category_img4.png" alt="밥 면 간편식">
+                  </div>
+                </div>
+              </li>
+              <li>
+                <a href="javascript:void(0)">정육&middot;달걀&middot;수산</a>
+                <div class="depth2_category_wrap">
+                  <ul class="depth2_category">
+                    <li><a href="javascript:void(0)">정육</a></li>
+                    <li><a href="javascript:void(0)">햄&middot;가공육</a></li>
+                    <li><a href="javascript:void(0)">달걀</a></li>
+                    <li><a href="javascript:void(0)">생선</a></li>
+                    <li><a href="javascript:void(0)">해산물</a></li>
+                    <li><a href="javascript:void(0)">건어물</a></li>
+                    <li><a href="javascript:void(0)">김</a></li>
+                  </ul>
+                  <div class="depth2_category_img_wrap">
+                    <img class="depth2_category_img" src="images/depth2_category_img5.png" alt="정육 달걀 수산">
+                  </div>
+                </div>
+              </li>
+              <li>
+                <a href="javascript:void(0)">김치&middot;반찬&middot;국탕</a>
+                <div class="depth2_category_wrap">
+                  <ul class="depth2_category">
+                    <li><a href="javascript:void(0)">김치</a></li>
+                    <li><a href="javascript:void(0)">두부</a></li>
+                    <li><a href="javascript:void(0)">어묵</a></li>
+                    <li><a href="javascript:void(0)">반찬</a></li>
+                    <li><a href="javascript:void(0)">젓갈</a></li>
+                    <li><a href="javascript:void(0)">국탕찌개</a></li>
+                  </ul>
+                  <div class="depth2_category_img_wrap">
+                    <img class="depth2_category_img" src="images/depth2_category_img6.png" alt="김치 반찬 국탕">
+                  </div>
+                </div>
+              </li>
+              <li>
+                <a href="javascript:void(0)">간식&middot;차&middot;음료</a>
+                <div class="depth2_category_wrap">
+                  <ul class="depth2_category">
+                    <li><a href="javascript:void(0)">스낵</a></li>
+                    <li><a href="javascript:void(0)">빵</a></li>
+                    <li><a href="javascript:void(0)">생수</a></li>
+                    <li><a href="javascript:void(0)">음료</a></li>
+                    <li><a href="javascript:void(0)">차</a></li>
+                    <li><a href="javascript:void(0)">커피</a></li>
+                    <li><a href="javascript:void(0)">우유</a></li>
+                    <li><a href="javascript:void(0)">유제품</a></li>
+                  </ul>
+                  <div class="depth2_category_img_wrap">
+                    <img class="depth2_category_img" src="images/depth2_category_img7.png" alt="간식 차 음료">
+                  </div>
+                </div>
+              </li>
+              <li>
+                <a href="javascript:void(0)">양념&middot;소스&middot;유지</a>
+                <div class="depth2_category_wrap">
+                  <ul class="depth2_category">
+                    <li><a href="javascript:void(0)">밀가루</a></li>
+                    <li><a href="javascript:void(0)">믹스</a></li>
+                    <li><a href="javascript:void(0)">소금</a></li>
+                    <li><a href="javascript:void(0)">설탕</a></li>
+                    <li><a href="javascript:void(0)">양념</a></li>
+                    <li><a href="javascript:void(0)">액젓</a></li>
+                    <li><a href="javascript:void(0)">장류</a></li>
+                    <li><a href="javascript:void(0)">소스</a></li>
+                    <li><a href="javascript:void(0)">드레싱</a></li>
+                  </ul>
+                  <div class="depth2_category_img_wrap">
+                    <img class="depth2_category_img" src="images/depth2_category_img8.png" alt="양념 소스 유지">
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <a href="javascript:void(0)">건강식품</a>
+                <div class="depth2_category_wrap">
+                  <ul class="depth2_category">
+                    <li><a href="javascript:void(0)">홍삼</a></li>
+                    <li><a href="javascript:void(0)">유산균</a></li>
+                    <li><a href="javascript:void(0)">비타민</a></li>
+                    <li><a href="javascript:void(0)">건강즙</a></li>
+                    <li><a href="javascript:void(0)">생식</a></li>
+                    <li><a href="javascript:void(0)">키즈</a></li>
+                    <li><a href="javascript:void(0)">다이어트</a></li>
+                  </ul>
+                  <div class="depth2_category_img_wrap">
+                    <img class="depth2_category_img" src="images/depth2_category_img9.png" alt="건강식품">
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <a href="javascript:void(0)">다이어트식</a>.
+                <div class="depth2_category_wrap">
+                  <ul class="depth2_category">
+                    <li><a href="javascript:void(0)">칼로리조절식</a></li>
+                    <li><a href="javascript:void(0)">건강도시락</a></li>
+                    <li><a href="javascript:void(0)">당뇨케어밀</a></li>
+                    <li><a href="javascript:void(0)">채식밀</a></li>
+                  </ul>
+                  <div class="depth2_category_img_wrap">
+                    <img class="depth2_category_img" src="images/depth2_category_img10.png" alt="다이어트식">
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <div class="link_nav_wrap clearfix">
+            <ul class="link_nav_list fl">
+              <li><a href="javascript:void(0)">TODAY 특가</a></li>
+              <li><a href="javascript:void(0)">베스트</a></li>
+              <li><a href="javascript:void(0)">기획전&middot;이벤트</a></li>
+              <li><a href="javascript:void(0)">쿠폰&middot;혜택</a></li>
+              <li><a href="javascript:void(0)">김치공방</a></li>
+            </ul>
+          </div>
+
+          <div class="nav_right fr">
+            <a href="" title="청정원홈페이지로 이동">
+              <span class="nav_right_text">오늘을 더 맛있게 청정원</span>
+              <img src="images/nav_right_img.png" alt="" class="nav_right_img">
+            </a>
+          </div>
+
+        </div>
+      </nav>
+    </header>
+
+
+    <main class="container" id="container">
+      <!-- width:100% -->
+      <section class="mvisual_container clearfix">
+        <!-- max-width:1920px js background 이미지변경 -->
+        <div class="mvisual_wrap">
+          <!-- width:1200px -->
+          <div class="mvisual_list_wrap">
+            <button class="mvisual_btn mvisual_prev_btn">이전배너보기</button>
+            <ul class="mvisual_list">
+              <li>
+                <a href="">
+                  <div class="mvisual_thumb_text1">청정원샵</div>
+                  <div class="mvisual_thumb_text2">2월 증정이벤트</div>
+                </a>
+              </li>
+
+              <li>
+                <a href="">
+                  <div class="mvisual_thumb_text1">청정원샵</div>
+                  <div class="mvisual_thumb_text2">떡볶이 기획전</div>
+                </a>
+              </li>
+
+              <li>
+                <a href="">
+                  <div class="mvisual_thumb_text1">2월</div>
+                  <div class="mvisual_thumb_text2">웰컴딜</div>
+                </a>
+              </li>
+
+              <li>
+                <a href="">
+                  <div class="mvisual_thumb_text1">청정원샵</div>
+                  <div class="mvisual_thumb_text2">체험세트</div>
+                </a>
+              </li>
+
+              <li>
+                <a href="">
+                  <div class="mvisual_thumb_text1">365일 상시할인</div>
+                  <div class="mvisual_thumb_text2">청정원마트</div>
+                </a>
+              </li>
+            </ul>
+
+            <button class="mvisual_btn mvisual_next_btn">다음배너보기</button>
+          </div>
+
+          <div class="mvisual_contents_wrap">
+            <ul class="mvisual_contents">
+              <li>
+                <a href="" title="클릭하여 더보기">
+                  <span class="mtext_top">증정 이벤트</span>
+                  <h3 class="mtext_title">2022년 2월<br/>증정 이벤트</h3>
+                  <span class="mtext_s">냉동상품 구매시<br />청정원 야식이야 후라이드 통살치킨 증정</span>
+                  <span class="mtext_l">02.17부터</span>
+                </a>
+              </li>
+              <li>
+                <a href="" title="클릭하여 더보기">
+                  <span class="mtext_top">적립금 이벤트</span>
+                  <h3 class="mtext_title">골라먹는 청정원샵<br/>떡볶이뷔페</h3>
+                  <span class="mtext_s">이벤트 구매고객 10~15% 추가적립</span>
+                  <span class="mtext_l">3월 3일까지</span>
+                </a>
+              </li>
+              <li>
+                <a href="" title="클릭하여 더보기">
+                  <span class="mtext_top">웰컴 이벤트</span>
+                  <h3 class="mtext_title">청정원샵 첫 구매<br/>웰컴 50% 쿠폰 증정</h3>
+                  <span class="mtext_s">신규가입 회원께만 드리는 격한 웰컴쿠폰</span>
+                  <span class="mtext_l">2월 28일까지</span>
+                </a>
+              </li>
+              <li>
+                <a href="" title="클릭하여 더보기">
+                  <span class="mtext_top">체험세트 기획전</span>
+                  <h3 class="mtext_title">청정원샵 체험세트<br/>상시기획전</h3>
+                  <span class="mtext_s">저렴한 가격으로 체험해보세요</span>
+                </a>
+              </li>
+              <li>
+                <a href="" title="클릭하여 더보기">
+                  <span class="mtext_top">자주사는 상품을 더 저렴하게</span>
+                  <h3 class="mtext_title">365일 상시 할인 청정원마트<br/> 균일가 4900원 5900원</h3>
+                  <span class="mtext_s">청정원 종가집 인기 상품 균일가 전문숍</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+
+        </div>
+
+      </section>
+
+      <section class="main_section box1_container">
+        <!-- max-width:1920px 100%는 main전체를 감싸는 container애서 지정 -->
+        <div class="main_inner_section box1_wrap clearfix">
+          <!-- width:1200px -->
+          <h2 class="box_title box1_title"><a href="">요즘, 많이 찾는 상품</a></h2><!-- after에 arrow이미지 -->
+          <ul class="box1_contents_title_list">
+            <li>
+              <a href="javascript:void(0)">#슬기로운 집콕 간편식</a>
+              <div class="box1_contents_list_wrap">
+                <div class="box1_contents_list_right_wrap">
+                  <ul class="box1_contents_list_right">
+                    <li class="product">
+                      <a href="javascript:void(0)">
+                        <img src="images/popular_product1.jpg" alt="">
+                        <div class="product_hover_add_box">
+                          <div class="hover_cart_btn" onclick="">
+                            장바구니 버튼
+                          </div>
+                        </div>
+                        <div class="product_content_text">
+                          <div class="product_sort">청정원</div>
+                          <div class="product_name">신선하고 국내산 곱창과 깻잎을 듬뿍넣은 곱창전골</div>
+                          <div class="product_price_wrap">
+                            <span class="product_discount">20%</span>
+                            <span><span class="product_price">9,500</span>원</span>
+                            <span class="product_origin_price"><del>12,300</del></span>
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+
+                    <li class="product">
+                      <a href="javascript:void(0)">
+                        <img src="images/popular_product2.jpg" alt="">
+                        <div class="product_hover_add_box">
+                          <div class="hover_cart_btn" onclick="">
+                            장바구니 버튼
+                          </div>
+                        </div>
+                        <div class="product_content_text">
+                          <div class="product_sort">청정원</div>
+                          <div class="product_name">할라피뇨 소시지랑 떡이랑</div>
+                          <div class="product_price_wrap">
+                            <span class="product_discount">20%</span>
+                            <span><span class="product_price">9,500</span>원</span>
+                            <span class="product_origin_price"><del>12,300</del></span>
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                  </ul><!-- e box1_contents_list_right -->
+                </div><!-- e box1_contents_list_right_wrap -->
+
+                <div class="box1_contents_list_middle_wrap">
+                  <ul>
+                    <li class="product box1_content_L">
+                      <a href="javascript:void(0)">
+                        <img src="images/popular_product3.jpg" alt="">
+                        <div class="product_hover_add_box">
+                          <div class="hover_cart_btn" onclick="">
+                            장바구니 버튼
+                          </div>
+                        </div>
+                        <div class="box1_content_text_L">
+                          <div class="product_sort">청정원</div>
+                          <div class="product_name">야식이야 베이컨&amp;로제떡볶이 485g</div>
+                          <div class="product_price_wrap">
+                            <span class="product_discount">20%</span>
+                            <span><span class="product_price">5,380</span>원</span>
+                            <span class="product_origin_price"><del>8,980</del></span>
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+                <!--e box1_contents_list_middle_wrap-->
+
+
+                <div class="box1_contents_list_left_wrap">
+                  <ul class="box1_contents_list_left">
+                    <li class="product">
+                      <a href="javascript:void(0)">
+                        <img src="images/popular_product4.jpg" alt="">
+                        <div class="product_hover_add_box">
+                          <div class="hover_cart_btn" onclick="">
+                            장바구니 버튼
+                          </div>
+                        </div>
+                        <div class="product_content_text">
+                          <div class="product_sort">청정원</div>
+                          <div class="product_name">달콤양념 오븐치킨</div>
+                          <div class="product_price_wrap">
+                            <span class="product_discount">10%</span>
+                            <span><span class="product_price">12,880</span>원</span>
+                            <span class="product_origin_price"><del>14,800</del></span>
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+
+                    <li class="product">
+                      <a href="javascript:void(0)">
+                        <img src="images/popular_product5.jpg" alt="">
+                        <div class="product_hover_add_box">
+                          <div class="hover_cart_btn" onclick="">
+                            장바구니 버튼
+                          </div>
+                        </div>
+                        <div class="product_content_text">
+                          <div class="product_sort">호밍스</div>
+                          <div class="product_name">깊은 짜장소스와 수타면이 만난 호밍스 짜장면</div>
+                          <div class="product_price_wrap">
+                            <span class="product_discount">10%</span>
+                            <span><span class="product_price">5,380</span>원</span>
+                            <span class="product_origin_price"><del>6,300</del></span>
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                  </ul>
+                  <!--e box1_contents_list_left-->
+                </div>
+                <!--e box1_contents_list_left_wrap-->
+              </div>
+            </li>
+
+
+            <li>
+              <a href="javascript:void(0)">#장바구니 필수 아이템</a>
+              <div class="box1_contents_list_wrap">
+                <div class="box1_contents_list_right_wrap">
+                  <ul class="box1_contents_list_right">
+                    <li class="product">
+                      <a href="javascript:void(0)">
+                        <img src="images/box1_product2_img1.png" alt="">
+                        <div class="product_hover_add_box">
+                          <div class="hover_cart_btn" onclick="">
+                            장바구니 버튼
+                          </div>
+                        </div>
+                        <div class="product_content_text">
+                          <div class="product_sort">종가집</div>
+                          <div class="product_name">썰어담은 맛김치 50g x 3개</div>
+                          <div class="product_price_wrap">
+                            <span class="product_discount">15%</span>
+                            <span><span class="product_price">2,850</span>원</span>
+                            <span class="product_origin_price"><del>3,000</del></span>
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+
+                    <li class="product">
+                      <a href="javascript:void(0)">
+                        <img src="images/box1_product2_img2.jpg" alt="">
+                        <div class="product_hover_add_box">
+                          <div class="hover_cart_btn" onclick="">
+                            장바구니 버튼
+                          </div>
+                        </div>
+                        <div class="product_content_text">
+                          <div class="product_sort">청정원</div>
+                          <div class="product_name">할라피뇨 소시지랑 떡이랑</div>
+                          <div class="product_price_wrap">
+                            <span class="product_discount">20%</span>
+                            <span><span class="product_price">9,500</span>원</span>
+                            <span class="product_origin_price"><del>12,300</del></span>
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                  </ul><!-- e box1_contents_list_right -->
+                </div><!-- e box1_contents_list_right_wrap -->
+
+                <div class="box1_contents_list_middle_wrap">
+                  <ul>
+                    <li class="product box1_content_L">
+                      <a href="javascript:void(0)">
+                        <img src="images/box1_product2_img3.jpg" alt="">
+                        <div class="product_hover_add_box">
+                          <div class="hover_cart_btn" onclick="">
+                            장바구니 버튼
+                          </div>
+                        </div>
+                        <div class="product_content_text box1_content_text_L">
+                          <div class="product_sort">청정원</div>
+                          <div class="product_name">야식이야 베이컨&amp;로제떡볶이 485g</div>
+                          <div class="product_price_wrap">
+                            <span class="product_discount">20%</span>
+                            <span><span class="product_price">5,380</span>원</span>
+                            <span class="product_origin_price"><del>8,980</del></span>
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+                <!--e box1_contents_list_middle_wrap-->
+
+
+                <div class="box1_contents_list_left_wrap">
+                  <ul class="box1_contents_list_left">
+                    <li class="product">
+                      <a href="javascript:void(0)">
+                        <img src="images/box1_product2_img4.jpg" alt="">
+                        <div class="product_hover_add_box">
+                          <div class="hover_cart_btn" onclick="">
+                            장바구니 버튼
+                          </div>
+                        </div>
+                        <div class="product_content_text">
+                          <div class="product_sort">청정원</div>
+                          <div class="product_name">달콤양념 오븐치킨</div>
+                          <div class="product_price_wrap">
+                            <span class="product_discount">10%</span>
+                            <span><span class="product_price">12,880</span>원</span>
+                            <span class="product_origin_price"><del>14,800</del></span>
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+
+                    <li class="product">
+                      <a href="javascript:void(0)">
+                        <img src="images/box1_product2_img5.jpg" alt="">
+                        <div class="product_hover_add_box">
+                          <div class="hover_cart_btn" onclick="">
+                            장바구니 버튼
+                          </div>
+                        </div>
+                        <div class="product_content_text">
+                          <div class="product_sort">호밍스</div>
+                          <div class="product_name">깊은 짜장소스와 수타면이 만난 호밍스 짜장면</div>
+                          <div class="product_price_wrap">
+                            <span class="product_discount">10%</span>
+                            <span><span class="product_price">5,380</span>원</span>
+                            <span class="product_origin_price"><del>6,300</del></span>
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                  </ul>
+                  <!--e box1_contents_list_left-->
+                </div>
+                <!--e box1_contents_list_left_wrap-->
+              </div>
+            </li>
+
+            <li>
+              <a href="javascript:void(0)">#즐거운 홈파티</a>
+              <div class="box1_contents_list_wrap">
+                <div class="box1_contents_list_right_wrap">
+                  <ul class="box1_contents_list_right">
+                    <li class="product">
+                      <a href="javascript:void(0)">
+                        <img src="images/box1_product3_img1.jpg" alt="">
+                        <div class="product_hover_add_box">
+                          <div class="hover_cart_btn" onclick="">
+                            장바구니 버튼
+                          </div>
+                        </div>
+                        <div class="product_content_text">
+                          <div class="product_sort">청정원</div>
+                          <div class="product_name">치즈시즈닝 퓨전닭</div>
+                          <div class="product_price_wrap">
+                            <span class="product_discount">20%</span>
+                            <span><span class="product_price">9,500</span>원</span>
+                            <span class="product_origin_price"><del>12,300</del></span>
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+
+                    <li class="product">
+                      <a href="javascript:void(0)">
+                        <img src="images/box1_product3_img2.jpg" alt="">
+                        <div class="product_hover_add_box">
+                          <div class="hover_cart_btn" onclick="">
+                            장바구니 버튼
+                          </div>
+                        </div>
+                        <div class="product_content_text">
+                          <div class="product_sort">청정원</div>
+                          <div class="product_name">할라피뇨 소시지랑 떡이랑</div>
+                          <div class="product_price_wrap">
+                            <span class="product_discount">20%</span>
+                            <span><span class="product_price">9,500</span>원</span>
+                            <span class="product_origin_price"><del>12,300</del></span>
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                  </ul><!-- e box1_contents_list_right -->
+                </div><!-- e box1_contents_list_right_wrap -->
+
+                <div class="box1_contents_list_middle_wrap">
+                  <ul>
+                    <li class="product box1_content_L">
+                      <a href="javascript:void(0)">
+                        <img src="images/box1_product3_img3.jpg" alt="">
+                        <div class="product_hover_add_box">
+                          <div class="hover_cart_btn" onclick="">
+                            장바구니 버튼
+                          </div>
+                        </div>
+                        <div class="product_content_text box1_content_text_L">
+                          <div class="product_sort">안주야</div>
+                          <div class="product_name">야식이야 베이컨&amp;로제떡볶이 485g</div>
+                          <div class="product_price_wrap">
+                            <span class="product_discount">20%</span>
+                            <span><span class="product_price">5,380</span>원</span>
+                            <span class="product_origin_price"><del>8,980</del></span>
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+                <!--e box1_contents_list_middle_wrap-->
+
+
+                <div class="box1_contents_list_left_wrap">
+                  <ul class="box1_contents_list_left">
+                    <li class="product">
+                      <a href="javascript:void(0)">
+                        <img src="images/box1_product3_img4.jpg" alt="">
+                        <div class="product_hover_add_box">
+                          <div class="hover_cart_btn" onclick="">
+                            장바구니 버튼
+                          </div>
+                        </div>
+                        <div class="product_content_text">
+                          <div class="product_sort">청정원</div>
+                          <div class="product_name">달콤양념 오븐치킨</div>
+                          <div class="product_price_wrap">
+                            <span class="product_discount">10%</span>
+                            <span><span class="product_price">12,880</span>원</span>
+                            <span class="product_origin_price"><del>14,800</del></span>
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+
+                    <li class="product">
+                      <a href="javascript:void(0)">
+                        <img src="images/box1_product3_img5.jpg" alt="">
+                        <div class="product_hover_add_box">
+                          <div class="hover_cart_btn" onclick="">
+                            장바구니 버튼
+                          </div>
+                        </div>
+                        <div class="product_content_text">
+                          <div class="product_sort">호밍스</div>
+                          <div class="product_name">깊은 짜장소스와 수타면이 만난 호밍스 짜장면</div>
+                          <div class="product_price_wrap">
+                            <span class="product_discount">10%</span>
+                            <span><span class="product_price">5,380</span>원</span>
+                            <span class="product_origin_price"><del>6,300</del></span>
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                  </ul>
+                  <!--e box1_contents_list_left-->
+                </div>
+                <!--e box1_contents_list_left_wrap-->
+              </div>
+
+            </li>
+
+            <li>
+              <a href="javascript:void(0)">#간편하고 건강한 식사</a>
+              <div class="box1_contents_list_wrap">
+                <div class="box1_contents_list_right_wrap">
+                  <ul class="box1_contents_list_right">
+                    <li class="product">
+                      <a href="javascript:void(0)">
+                        <img src="images/box1_product4_img1.jpg" alt="">
+                        <div class="product_hover_add_box">
+                          <div class="hover_cart_btn" onclick="">
+                            장바구니 버튼
+                          </div>
+                        </div>
+                        <div class="product_content_text">
+                          <div class="product_sort">청정원</div>
+                          <div class="product_name">신선하고 국내산 곱창과 깻잎을 듬뿍넣은 곱창전골</div>
+                          <div class="product_price_wrap">
+                            <span class="product_discount">20%</span>
+                            <span><span class="product_price">9,500</span>원</span>
+                            <span class="product_origin_price"><del>12,300</del></span>
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+
+                    <li class="product">
+                      <a href="javascript:void(0)">
+                        <img src="images/box1_product4_img2.png" alt="">
+                        <div class="product_hover_add_box">
+                          <div class="hover_cart_btn" onclick="">
+                            장바구니 버튼
+                          </div>
+                        </div>
+                        <div class="product_content_text">
+                          <div class="product_sort">청정원</div>
+                          <div class="product_name">할라피뇨 소시지랑 떡이랑</div>
+                          <div class="product_price_wrap">
+                            <span class="product_discount">20%</span>
+                            <span><span class="product_price">9,500</span>원</span>
+                            <span class="product_origin_price"><del>12,300</del></span>
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                  </ul><!-- e box1_contents_list_right -->
+                </div><!-- e box1_contents_list_right_wrap -->
+
+                <div class="box1_contents_list_middle_wrap">
+                  <ul>
+                    <li class="product box1_content_L">
+                      <a href="javascript:void(0)">
+                        <img src="images/box1_product4_img3.jpg" alt="">
+                        <div class="product_hover_add_box">
+                          <div class="hover_cart_btn" onclick="">
+                            장바구니 버튼
+                          </div>
+                        </div>
+                        <div class="product_content_text box1_content_text_L">
+                          <div class="product_sort">정원식</div>
+                          <div class="product_name">정원 다이어트식 일주일</div>
+                          <div class="product_price_wrap">
+                            <span class="product_discount">10%</span>
+                            <span><span class="product_price">72,000</span>원</span>
+                            <span class="product_origin_price"><del>80,000</del></span>
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+                <!--e box1_contents_list_middle_wrap-->
+
+
+                <div class="box1_contents_list_left_wrap">
+                  <ul class="box1_contents_list_left">
+                    <li class="product">
+                      <a href="javascript:void(0)">
+                        <img src="images/box1_product4_img4.png" alt="">
+                        <div class="product_hover_add_box">
+                          <div class="hover_cart_btn" onclick="">
+                            장바구니 버튼
+                          </div>
+                        </div>
+                        <div class="product_content_text">
+                          <div class="product_sort">청정원</div>
+                          <div class="product_name">달콤양념 오븐치킨</div>
+                          <div class="product_price_wrap">
+                            <span class="product_discount">10%</span>
+                            <span><span class="product_price">12,880</span>원</span>
+                            <span class="product_origin_price"><del>14,800</del></span>
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+
+                    <li class="product">
+                      <a href="javascript:void(0)">
+                        <img src="images/box1_product4_img5.jpg" alt="">
+                        <div class="product_hover_add_box">
+                          <div class="hover_cart_btn" onclick="">
+                            장바구니 버튼
+                          </div>
+                        </div>
+                        <div class="product_content_text">
+                          <div class="product_sort">호밍스</div>
+                          <div class="product_name">깊은 짜장소스와 수타면이 만난 호밍스 짜장면</div>
+                          <div class="product_price_wrap">
+                            <span class="product_discount">10%</span>
+                            <span><span class="product_price">5,380</span>원</span>
+                            <span class="product_origin_price"><del>6,300</del></span>
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                  </ul>
+                  <!--e box1_contents_list_left-->
+                </div>
+                <!--e box1_contents_list_left_wrap-->
+              </div>
+
+            </li>
+
+            <li>
+              <a href="javascript:void(0)">#오늘은 파스타 요리사</a>
+              <div class="box1_contents_list_wrap">
+                <div class="box1_contents_list_right_wrap">
+                  <ul class="box1_contents_list_right">
+                    <li class="product">
+                      <a href="javascript:void(0)">
+                        <img src="images/box1_product5_img1.jpg" alt="">
+                        <div class="product_hover_add_box">
+                          <div class="hover_cart_btn" onclick="">
+                            장바구니 버튼
+                          </div>
+                        </div>
+                        <div class="product_content_text">
+                          <div class="product_sort">청정원</div>
+                          <div class="product_name">크림 파스타 소스 3~4인분</div>
+                          <div class="product_price_wrap">
+                            <span class="product_discount">20%</span>
+                            <span><span class="product_price">3,500</span>원</span>
+                            <span class="product_origin_price"><del>4,800</del></span>
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+
+                    <li class="product">
+                      <a href="javascript:void(0)">
+                        <img src="images/box1_product5_img2.jpg" alt="">
+                        <div class="product_hover_add_box">
+                          <div class="hover_cart_btn" onclick="">
+                            장바구니 버튼
+                          </div>
+                        </div>
+                        <div class="product_content_text">
+                          <div class="product_sort">청정원</div>
+                          <div class="product_name">할라피뇨 소시지랑 떡이랑</div>
+                          <div class="product_price_wrap">
+                            <span class="product_discount">20%</span>
+                            <span><span class="product_price">9,500</span>원</span>
+                            <span class="product_origin_price"><del>12,300</del></span>
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                  </ul><!-- e box1_contents_list_right -->
+                </div><!-- e box1_contents_list_right_wrap -->
+
+                <div class="box1_contents_list_middle_wrap">
+                  <ul>
+                    <li class="product box1_content_L">
+                      <a href="javascript:void(0)">
+                        <img src="images/box1_product5_img3.jpg" alt="">
+                        <div class="product_hover_add_box">
+                          <div class="hover_cart_btn" onclick="">
+                            장바구니 버튼
+                          </div>
+                        </div>
+                        <div class="product_content_text box1_content_text_L">
+                          <div class="product_sort">청정원</div>
+                          <div class="product_name">야식이야 베이컨&amp;로제떡볶이 485g</div>
+                          <div class="product_price_wrap">
+                            <span class="product_discount">20%</span>
+                            <span><span class="product_price">5,380</span>원</span>
+                            <span class="product_origin_price"><del>8,980</del></span>
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+                <!--e box1_contents_list_middle_wrap-->
+
+
+                <div class="box1_contents_list_left_wrap">
+                  <ul class="box1_contents_list_left">
+                    <li class="product">
+                      <a href="javascript:void(0)">
+                        <img src="images/box1_product5_img4.jpg" alt="">
+                        <div class="product_hover_add_box">
+                          <div class="hover_cart_btn" onclick="">
+                            장바구니 버튼
+                          </div>
+                        </div>
+                        <div class="product_content_text">
+                          <div class="product_sort">청정원</div>
+                          <div class="product_name">달콤양념 오븐치킨</div>
+                          <div class="product_price_wrap">
+                            <span class="product_discount">10%</span>
+                            <span><span class="product_price">12,880</span>원</span>
+                            <span class="product_origin_price"><del>14,800</del></span>
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+
+                    <li class="product">
+                      <a href="javascript:void(0)">
+                        <img src="images/box1_product5_img5.jpg" alt="">
+                        <div class="product_hover_add_box">
+                          <div class="hover_cart_btn" onclick="">
+                            장바구니 버튼
+                          </div>
+                        </div>
+                        <div class="product_content_text">
+                          <div class="product_sort">호밍스</div>
+                          <div class="product_name">깊은 짜장소스와 수타면이 만난 호밍스 짜장면</div>
+                          <div class="product_price_wrap">
+                            <span class="product_discount">10%</span>
+                            <span><span class="product_price">5,380</span>원</span>
+                            <span class="product_origin_price"><del>6,300</del></span>
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                  </ul>
+                  <!--e box1_contents_list_left-->
+                </div>
+                <!--e box1_contents_list_left_wrap-->
+              </div>
+
+            </li>
+
+            <li>
+              <a href="javascript:void(0)">#스트레스 해소! 안주야</a>
+              <div class="box1_contents_list_wrap">
+                <div class="box1_contents_list_right_wrap">
+                  <ul class="box1_contents_list_right">
+                    <li class="product">
+                      <a href="javascript:void(0)">
+                        <img src="images/box1_product6_img1.jpg" alt="">
+                        <div class="product_hover_add_box">
+                          <div class="hover_cart_btn" onclick="">
+                            장바구니 버튼
+                          </div>
+                        </div>
+                        <div class="product_content_text">
+                          <div class="product_sort">청정원</div>
+                          <div class="product_name">신선하고 국내산 곱창과 깻잎을 듬뿍넣은 곱창전골</div>
+                          <div class="product_price_wrap">
+                            <span class="product_discount">20%</span>
+                            <span><span class="product_price">9,500</span>원</span>
+                            <span class="product_origin_price"><del>12,300</del></span>
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+
+                    <li class="product">
+                      <a href="javascript:void(0)">
+                        <img src="images/box1_product6_img2.jpg" alt="">
+                        <div class="product_hover_add_box">
+                          <div class="hover_cart_btn" onclick="">
+                            장바구니 버튼
+                          </div>
+                        </div>
+                        <div class="product_content_text">
+                          <div class="product_sort">청정원</div>
+                          <div class="product_name">할라피뇨 소시지랑 떡이랑</div>
+                          <div class="product_price_wrap">
+                            <span class="product_discount">20%</span>
+                            <span><span class="product_price">9,500</span>원</span>
+                            <span class="product_origin_price"><del>12,300</del></span>
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                  </ul><!-- e box1_contents_list_right -->
+                </div><!-- e box1_contents_list_right_wrap -->
+
+                <div class="box1_contents_list_middle_wrap">
+                  <ul>
+                    <li class="product box1_content_L">
+                      <a href="javascript:void(0)">
+                        <img src="images/box1_product6_img3.png" alt="">
+                        <div class="product_hover_add_box">
+                          <div class="hover_cart_btn" onclick="">
+                            장바구니 버튼
+                          </div>
+                        </div>
+                        <div class="product_content_text box1_content_text_L">
+                          <div class="product_sort">안주야</div>
+                          <div class="product_name">안주야 막창 380g</div>
+                          <div class="product_price_wrap">
+                            <span class="product_discount">20%</span>
+                            <span><span class="product_price">5,380</span>원</span>
+                            <span class="product_origin_price"><del>8,980</del></span>
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+                <!--e box1_contents_list_middle_wrap-->
+
+
+                <div class="box1_contents_list_left_wrap">
+                  <ul class="box1_contents_list_left">
+                    <li class="product">
+                      <a href="javascript:void(0)">
+                        <img src="images/box1_product6_img4.jpg" alt="">
+                        <div class="product_hover_add_box">
+                          <div class="hover_cart_btn" onclick="">
+                            장바구니 버튼
+                          </div>
+                        </div>
+                        <div class="product_content_text">
+                          <div class="product_sort">청정원</div>
+                          <div class="product_name">달콤양념 오븐치킨</div>
+                          <div class="product_price_wrap">
+                            <span class="product_discount">10%</span>
+                            <span><span class="product_price">12,880</span>원</span>
+                            <span class="product_origin_price"><del>14,800</del></span>
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+
+                    <li class="product">
+                      <a href="javascript:void(0)">
+                        <img src="images/box1_product6_img5.jpg" alt="">
+                        <div class="product_hover_add_box">
+                          <div class="hover_cart_btn" onclick="">
+                            장바구니 버튼
+                          </div>
+                        </div>
+                        <div class="product_content_text">
+                          <div class="product_sort">호밍스</div>
+                          <div class="product_name">깊은 짜장소스와 수타면이 만난 호밍스 짜장면</div>
+                          <div class="product_price_wrap">
+                            <span class="product_discount">10%</span>
+                            <span><span class="product_price">5,380</span>원</span>
+                            <span class="product_origin_price"><del>6,300</del></span>
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                  </ul>
+                  <!--e box1_contents_list_left-->
+                </div>
+                <!--e box1_contents_list_left_wrap-->
+              </div>
+
+            </li>
+
+            <li>
+              <a href="javascript:void(0)">#쟁여놓기 좋은 비상식량</a>
+              <div class="box1_contents_list_wrap">
+                <div class="box1_contents_list_right_wrap">
+                  <ul class="box1_contents_list_right">
+                    <li class="product">
+                      <a href="javascript:void(0)">
+                        <img src="images/box1_product7_img1.jpg" alt="">
+                        <div class="product_hover_add_box">
+                          <div class="hover_cart_btn" onclick="">
+                            장바구니 버튼
+                          </div>
+                        </div>
+                        <div class="product_content_text">
+                          <div class="product_sort">복음자리</div>
+                          <div class="product_name">달콤하고 상큼한 사과잼</div>
+                          <div class="product_price_wrap">
+                            <span class="product_discount">20%</span>
+                            <span><span class="product_price">9,500</span>원</span>
+                            <span class="product_origin_price"><del>12,300</del></span>
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+
+                    <li class="product">
+                      <a href="javascript:void(0)">
+                        <img src="images/box1_product7_img2.jpg" alt="">
+                        <div class="product_hover_add_box">
+                          <div class="hover_cart_btn" onclick="">
+                            장바구니 버튼
+                          </div>
+                        </div>
+                        <div class="product_content_text">
+                          <div class="product_sort">청정원</div>
+                          <div class="product_name">할라피뇨 소시지랑 떡이랑</div>
+                          <div class="product_price_wrap">
+                            <span class="product_discount">20%</span>
+                            <span><span class="product_price">9,500</span>원</span>
+                            <span class="product_origin_price"><del>12,300</del></span>
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                  </ul><!-- e box1_contents_list_right -->
+                </div><!-- e box1_contents_list_right_wrap -->
+
+                <div class="box1_contents_list_middle_wrap">
+                  <ul>
+                    <li class="product box1_content_L">
+                      <a href="javascript:void(0)">
+                        <img src="images/box1_product7_img3.jpg" alt="">
+                        <div class="product_hover_add_box">
+                          <div class="hover_cart_btn" onclick="">
+                            장바구니 버튼
+                          </div>
+                        </div>
+                        <div class="product_content_text box1_content_text_L">
+                          <div class="product_sort">청정원</div>
+                          <div class="product_name">야식이야 베이컨&amp;로제떡볶이 485g</div>
+                          <div class="product_price_wrap">
+                            <span class="product_discount">20%</span>
+                            <span><span class="product_price">5,380</span>원</span>
+                            <span class="product_origin_price"><del>8,980</del></span>
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+                <!--e box1_contents_list_middle_wrap-->
+
+
+                <div class="box1_contents_list_left_wrap">
+                  <ul class="box1_contents_list_left">
+                    <li class="product">
+                      <a href="javascript:void(0)">
+                        <img src="images/box1_product7_img4.jpg" alt="">
+                        <div class="product_hover_add_box">
+                          <div class="hover_cart_btn" onclick="">
+                            장바구니 버튼
+                          </div>
+                        </div>
+                        <div class="product_content_text">
+                          <div class="product_sort">청정원</div>
+                          <div class="product_name">달콤양념 오븐치킨</div>
+                          <div class="product_price_wrap">
+                            <span class="product_discount">10%</span>
+                            <span><span class="product_price">12,880</span>원</span>
+                            <span class="product_origin_price"><del>14,800</del></span>
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+
+                    <li class="product">
+                      <a href="javascript:void(0)">
+                        <img src="images/box1_product7_img5.jpg" alt="">
+                        <div class="product_hover_add_box">
+                          <div class="hover_cart_btn" onclick="">
+                            장바구니 버튼
+                          </div>
+                        </div>
+                        <div class="product_content_text">
+                          <div class="product_sort">호밍스</div>
+                          <div class="product_name">깊은 짜장소스와 수타면이 만난 호밍스 짜장면</div>
+                          <div class="product_price_wrap">
+                            <span class="product_discount">10%</span>
+                            <span><span class="product_price">5,380</span>원</span>
+                            <span class="product_origin_price"><del>6,300</del></span>
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                  </ul>
+                  <!--e box1_contents_list_left-->
+                </div>
+                <!--e box1_contents_list_left_wrap-->
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="main_section box2_container">
+        <div class="main_inner_section box2_wrap clearfix">
+
+          <div class="box2_text_wrap">
+            <h2 class="box2_title">
+              <span>더 나은 맛, 더 맛있는 인생</span>
+              <span>청정원 푸드</span>
+            </h2>
+            <a class="go_chengjungone" href="">청정원 홈페이지 바로가기</a>
+          </div>
+          <div class="box2_content_container">
+            <div class="box2_content_wrap">
+              <button class="box2_control_btn box2_prev_btn">이전 청정원푸드 보기</button>
+              <div class="box2_content_list_wrap">
+                <ul class="box2_content_list">
+                  <li class="box2_content">
+                    <a href="">
+                      <img class="box2_content_img" src="images/box2_food_img1.jpg" alt="">
+                      <div class="box2_content_text_wrap">
+                        청정원 건강 식단
+                        <div class="box2_content_text">청정원에서 깐깐하게 만든 영양식단</div>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="box2_content">
+                    <a href="">
+                      <img class="box2_content_img" src="images/box2_food_img2.jpg" alt="">
+                      <div class="box2_content_text_wrap">
+                        국내산 돼지고기와 치즈로 만든
+                        <div class="box2_content_text">바삭바삭 치즈 돈까스</div>
+                      </div>
+                    </a>
+                  </li>
+
+                  <li class="box2_content">
+                    <a href="">
+                      <img class="box2_content_img" src="images/box2_food_img3.jpg" alt="">
+                      <div class="box2_content_text_wrap">
+                        아카시아꽃 향기를 품은
+                        <div class="box2_content_text">1+등급 프리미엄 아카시아꿀</div>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="box2_content">
+                    <a href="">
+                      <img class="box2_content_img" src="images/box2_food_img4.jpg" alt="">
+                      <div class="box2_content_text_wrap">
+                        청정원PB
+                        <div class="box2_content_text">청정원에서 야심차게 만든 상품</div>
+                      </div>
+                    </a>
+                  </li>
+
+                  <li class="box2_content">
+                    <a href="">
+                      <img class="box2_content_img" src="images/box2_food_img5.jpg" alt="">
+                      <div class="box2_content_text_wrap">
+                        우리콩과 천일염으로 만든
+                        <div class="box2_content_text">청정원 전통 된장</div>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="box2_content">
+                    <a href="">
+                      <img class="box2_content_img" src="images/box2_food_img6.jpg" alt="">
+                      <div class="box2_content_text_wrap">
+                        행복한 닭이 낳은
+                        <div class="box2_content_text">동물복지 유정란</div>
+                      </div>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <button class="box2_control_btn box2_next_btn">다음 청정원푸드 보기</button>
+            </div>
+
+            <div class="box2_control_wrap">
+              <span class="box2_control_bar box2_control_bar1">청정원푸드1,2</span>
+              <span class="box2_control_bar box2_control_bar2">청정원푸드3,4</span>
+              <span class="box2_control_bar box2_control_bar3">청정원푸드5,6</span>
+              <span class="box2_control_ps pause">청정원푸드 배너 재생, 멈춤</span>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <section class="main_section box3_container">
+        <div class="main_inner_section box3_wrap clearfix">
+          <h2 class="box_title box3_title"><a href="">잘 나가요, 이 상품</a></h2>
+          <div class="box3_content_wrap">
+            <ul class="box3_content_list">
+              <li class="product">
+                <a href="javascript:void(0)">
+                  <img src="images/box3_product_img1.jpg" alt="">
+                  <div class="product_hover_add_box">
+                    <div class="hover_cart_btn" onclick="">
+                      장바구니 버튼
+                    </div>
+                  </div>
+                  <div class="product_content_text">
+                    <div class="product_sort">청정원</div>
+                    <div class="product_name">달콤양념 오븐치킨</div>
+                    <div class="product_price_wrap">
+                      <span class="product_discount">10%</span>
+                      <span><span class="product_price">12,880</span>원</span>
+                      <span class="product_origin_price"><del>14,800</del></span>
+                    </div>
+                    <div class="product_rate_wrap">
+                      <div class="full_star"></div>
+                      <div class="full_star"></div>
+                      <div class="full_star"></div>
+                      <div class="full_star"></div>
+                      <div class="almost_filled_star"></div>
+                      <span>4.9</span>
+                    </div>
+                  </div>
+                  <div class="best_item_num">
+                    <span class="best_text">BEST</span>
+                    <span class="best_num">01</span>
+                  </div>
+                </a>
+              </li>
+
+              <li class="product">
+                <a href="javascript:void(0)">
+                  <img src="images/box3_product_img2.png" alt="">
+                  <div class="product_hover_add_box">
+                    <div class="hover_cart_btn" onclick="">
+                      장바구니 버튼
+                    </div>
+                  </div>
+                  <div class="product_content_text">
+                    <div class="product_sort">청정원</div>
+                    <div class="product_name">달콤양념 오븐치킨</div>
+                    <div class="product_price_wrap">
+                      <span class="product_discount">10%</span>
+                      <span><span class="product_price">12,880</span>원</span>
+                      <span class="product_origin_price"><del>14,800</del></span>
+                    </div>
+                    <div class="product_rate_wrap">
+                      <div class="full_star"></div>
+                      <div class="full_star"></div>
+                      <div class="full_star"></div>
+                      <div class="full_star"></div>
+                      <div class="half_more_filled_star"></div>
+                      <span>4.7</span>
+                    </div>
+                  </div>
+                  <div class="best_item_num">
+                    <span class="best_text">BEST</span>
+                    <span class="best_num">02</span>
+                  </div>
+                </a>
+              </li>
+
+              <li class="product">
+                <a href="javascript:void(0)">
+                  <img src="images/box3_product_img3.jpg" alt="">
+                  <div class="product_hover_add_box">
+                    <div class="hover_cart_btn" onclick="">
+                      장바구니 버튼
+                    </div>
+                  </div>
+                  <div class="product_content_text">
+                    <div class="product_sort">청정원</div>
+                    <div class="product_name">달콤양념 오븐치킨</div>
+                    <div class="product_price_wrap">
+                      <span class="product_discount">10%</span>
+                      <span><span class="product_price">12,880</span>원</span>
+                      <span class="product_origin_price"><del>14,800</del></span>
+                    </div>
+                    <div class="product_rate_wrap">
+                      <div class="full_star"></div>
+                      <div class="full_star"></div>
+                      <div class="full_star"></div>
+                      <div class="full_star"></div>
+                      <div class="almost_filled_star"></div>
+                      <span>4.9</span>
+                    </div>
+                  </div>
+                  <div class="best_item_num">
+                    <span class="best_text">BEST</span>
+                    <span class="best_num">03</span>
+                  </div>
+                </a>
+              </li>
+
+              <li class="product">
+                <a href="javascript:void(0)">
+                  <img src="images/box3_product_img4.jpg" alt="">
+                  <div class="product_hover_add_box">
+                    <div class="hover_cart_btn" onclick="">
+                      장바구니 버튼
+                    </div>
+                  </div>
+                  <div class="product_content_text">
+                    <div class="product_sort">청정원</div>
+                    <div class="product_name">달콤양념 오븐치킨</div>
+                    <div class="product_price_wrap">
+                      <span class="product_discount">10%</span>
+                      <span><span class="product_price">12,880</span>원</span>
+                      <span class="product_origin_price"><del>14,800</del></span>
+                    </div>
+                    <div class="product_rate_wrap">
+                      <div class="full_star"></div>
+                      <div class="full_star"></div>
+                      <div class="full_star"></div>
+                      <div class="full_star"></div>
+                      <div class="half_filled_star"></div>
+                      <span>4.5</span>
+                    </div>
+                  </div>
+                  <div class="best_item_num">
+                    <span class="best_text">BEST</span>
+                    <span class="best_num">04</span>
+                  </div>
+                </a>
+              </li>
+
+              <li class="product">
+                <a href="javascript:void(0)">
+                  <img src="images/box3_product_img5.jpg" alt="">
+                  <div class="product_hover_add_box">
+                    <div class="hover_cart_btn" onclick="">
+                      장바구니 버튼
+                    </div>
+                  </div>
+                  <div class="product_content_text">
+                    <div class="product_sort">청정원</div>
+                    <div class="product_name">달콤양념 오븐치킨</div>
+                    <div class="product_price_wrap">
+                      <span class="product_discount">10%</span>
+                      <span><span class="product_price">12,880</span>원</span>
+                      <span class="product_origin_price"><del>14,800</del></span>
+                    </div>
+                    <div class="product_rate_wrap">
+                      <div class="full_star"></div>
+                      <div class="full_star"></div>
+                      <div class="full_star"></div>
+                      <div class="full_star"></div>
+                      <div class="almost_filled_star"></div>
+                      <span>4.9</span>
+                    </div>
+                  </div>
+                  <div class="best_item_num">
+                    <span class="best_text">BEST</span>
+                    <span class="best_num">05</span>
+                  </div>
+                </a>
+              </li>
+
+              <li class="product">
+                <a href="javascript:void(0)">
+                  <img src="images/box3_product_img6.jpg" alt="">
+                  <div class="product_hover_add_box">
+                    <div class="hover_cart_btn" onclick="">
+                      장바구니 버튼
+                    </div>
+                  </div>
+                  <div class="product_content_text">
+                    <div class="product_sort">청정원</div>
+                    <div class="product_name">달콤양념 오븐치킨</div>
+                    <div class="product_price_wrap">
+                      <span class="product_discount">10%</span>
+                      <span><span class="product_price">12,880</span>원</span>
+                      <span class="product_origin_price"><del>14,800</del></span>
+                    </div>
+                    <div class="product_rate_wrap">
+                      <div class="full_star"></div>
+                      <div class="full_star"></div>
+                      <div class="full_star"></div>
+                      <div class="full_star"></div>
+                      <div class="almost_filled_star"></div>
+                      <span>4.9</span>
+                    </div>
+                  </div>
+                  <div class="best_item_num">
+                    <span class="best_text">BEST</span>
+                    <span class="best_num">06</span>
+                  </div>
+                </a>
+              </li>
+
+              <li class="product">
+                <a href="javascript:void(0)">
+                  <img src="images/box3_product_img7.jpg" alt="">
+                  <div class="product_hover_add_box">
+                    <div class="hover_cart_btn" onclick="">
+                      장바구니 버튼
+                    </div>
+                  </div>
+                  <div class="product_content_text">
+                    <div class="product_sort">청정원</div>
+                    <div class="product_name">달콤양념 오븐치킨</div>
+                    <div class="product_price_wrap">
+                      <span class="product_discount">10%</span>
+                      <span><span class="product_price">12,880</span>원</span>
+                      <span class="product_origin_price"><del>14,800</del></span>
+                    </div>
+                    <div class="product_rate_wrap">
+                      <div class="full_star"></div>
+                      <div class="full_star"></div>
+                      <div class="full_star"></div>
+                      <div class="full_star"></div>
+                      <div class="almost_filled_star"></div>
+                      <span>4.9</span>
+                    </div>
+                  </div>
+                  <div class="best_item_num">
+                    <span class="best_text">BEST</span>
+                    <span class="best_num">07</span>
+                  </div>
+                </a>
+              </li>
+
+              <li class="product">
+                <a href="javascript:void(0)">
+                  <img src="images/box3_product_img8.jpg" alt="">
+                  <div class="product_hover_add_box">
+                    <div class="hover_cart_btn" onclick="">
+                      장바구니 버튼
+                    </div>
+                  </div>
+                  <div class="product_content_text">
+                    <div class="product_sort">청정원</div>
+                    <div class="product_name">달콤양념 오븐치킨</div>
+                    <div class="product_price_wrap">
+                      <span class="product_discount">10%</span>
+                      <span><span class="product_price">12,880</span>원</span>
+                      <span class="product_origin_price"><del>14,800</del></span>
+                    </div>
+                    <div class="product_rate_wrap">
+                      <div class="full_star"></div>
+                      <div class="full_star"></div>
+                      <div class="full_star"></div>
+                      <div class="full_star"></div>
+                      <div class="almost_filled_star"></div>
+                      <span>4.9</span>
+                    </div>
+                  </div>
+                  <div class="best_item_num">
+                    <span class="best_text">BEST</span>
+                    <span class="best_num">08</span>
+                  </div>
+                </a>
+              </li>
+            </ul>
+
+          </div>
+
+
+        </div>
+      </section>
+
+      <section class="main_section box4_container">
+        <!-- width:100% -->
+        <div class="main_inner_section box4_wrap">
+          <!-- width:1200px -->
+          <div class="box4_text_wrap">
+            <ul class="box4_text_list">
+              <li class="box4_text">
+                <a href="">
+                  <strong class="box4_text_title">
+                    신한카드 마이샵 할인혜택
+                  </strong>
+                  3/5만원 이상 구매시 5천원/1만원 청구할인!
+                </a>
+              </li>
+              <li class="box4_text">
+                <a href="">
+                  <strong class="box4_text_title">
+                    현대카드 M포인트 30%사용
+                  </strong>
+                  최대 2만 5천 포인트까지!
+                </a>
+              </li>
+              <li class="box4_text">
+                <a href="">
+                  <strong class="box4_text_title">
+                    삼성카드 LINK 혜택
+                  </strong>
+                  LINK하고 3/5만원 구매시 할인혜택!
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="box4_control_wrap">
+            <span class="box4_control box4_control_bar">카드관련혜택1 보기</span>
+            <span class="box4_control box4_control_bar">카드관련혜택2 보기</span>
+            <span class="box4_control box4_control_bar">카드관련혜택3 보기</span>
+            <span class="box4_control_ps box4_control_bar pause">카드관련혜택 배너 재생, 멈춤</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="main_section box5_container">
+        <div class="main_inner_section box5_wrap clearfix">
+          <h2 class="box_title box5_title">오늘 사면, 이 가격</h2>
+          <span class="today_timer"></span>
+          <ul class="box5_left_content">
+            <li class="product box5_content_L">
+              <a href="javascript:void(0)">
+                <img src="images/box5_product_img1.png" alt="">
+
+                <div class="box5_content_text box5_content_text_L">
+                  <div class="product_sort">청정원</div>
+                  <div class="product_name">야식이야 베이컨&amp;로제떡볶이 485g</div>
+                  <div class="product_price_wrap">
+                    <span class="product_discount">20%</span>
+                    <span><span class="product_price">5,380</span>원</span>
+                    <span class="product_origin_price"><del>8,980</del></span>
+                  </div>
+                </div>
+
+                <div class="product_hover_add_box">
+                  <div class="hover_text_wrap">
+                    <div class="hover_text">#영양이 풍부한 #맛이 일품</div>
+                  </div>
+                  <div class="hover_cart_btn" onclick="">
+                    장바구니 버튼
+                  </div>
+                </div>
+              </a>
+            </li>
+          </ul>
+
+          <div class="box5_right_wrap clearfix">
+            <ul class="box5_right_content">
+              <li class="product">
+                <a href="javascript:void(0)">
+                  <img src="images/box5_product_img2.jpg" alt="">
+                  <div class="product_hover_add_box">
+                    <div class="hover_cart_btn" onclick="">
+                      장바구니 버튼
+                    </div>
+                  </div>
+                  <div class="box5_content_text">
+                    <div class="product_sort">청정원</div>
+                    <div class="product_name">달콤양념 오븐치킨</div>
+                    <div class="product_price_wrap">
+                      <span class="product_discount">10%</span>
+                      <span><span class="product_price">12,880</span>원</span>
+                      <span class="product_origin_price"><del>14,800</del></span>
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li class="product">
+                <a href="javascript:void(0)">
+                  <img src="images/box5_product_img3.png" alt="">
+                  <div class="product_hover_add_box">
+                    <div class="hover_cart_btn" onclick="">
+                      장바구니 버튼
+                    </div>
+                  </div>
+                  <div class="box5_content_text">
+                    <div class="product_sort">청정원</div>
+                    <div class="product_name">달콤양념 오븐치킨</div>
+                    <div class="product_price_wrap">
+                      <span class="product_discount">10%</span>
+                      <span><span class="product_price">12,880</span>원</span>
+                      <span class="product_origin_price"><del>14,800</del></span>
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li class="product">
+                <a href="javascript:void(0)">
+                  <img src="images/box5_product_img4.jpg" alt="">
+                  <div class="product_hover_add_box">
+                    <div class="hover_cart_btn" onclick="">
+                      장바구니 버튼
+                    </div>
+                  </div>
+                  <div class="box5_content_text">
+                    <div class="product_sort">청정원</div>
+                    <div class="product_name">달콤양념 오븐치킨</div>
+                    <div class="product_price_wrap">
+                      <span class="product_discount">10%</span>
+                      <span><span class="product_price">12,880</span>원</span>
+                      <span class="product_origin_price"><del>14,800</del></span>
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li class="product">
+                <a href="javascript:void(0)">
+                  <img src="images/box5_product_img5.jpg" alt="">
+                  <div class="product_hover_add_box">
+                    <div class="hover_cart_btn" onclick="">
+                      장바구니 버튼
+                    </div>
+                  </div>
+                  <div class="box5_content_text">
+                    <div class="product_sort">청정원</div>
+                    <div class="product_name">달콤양념 오븐치킨</div>
+                    <div class="product_price_wrap">
+                      <span class="product_discount">10%</span>
+                      <span><span class="product_price">12,880</span>원</span>
+                      <span class="product_origin_price"><del>14,800</del></span>
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li class="product">
+                <a href="javascript:void(0)">
+                  <img src="images/box5_product_img6.jpg" alt="">
+                  <div class="product_hover_add_box">
+                    <div class="hover_cart_btn" onclick="">
+                      장바구니 버튼
+                    </div>
+                  </div>
+                  <div class="box5_content_text">
+                    <div class="product_sort">청정원</div>
+                    <div class="product_name">달콤양념 오븐치킨</div>
+                    <div class="product_price_wrap">
+                      <span class="product_discount">10%</span>
+                      <span><span class="product_price">12,880</span>원</span>
+                      <span class="product_origin_price"><del>14,800</del></span>
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li class="product">
+                <a href="javascript:void(0)">
+                  <img src="images/box5_product_img7.png" alt="">
+                  <div class="product_hover_add_box">
+                    <div class="hover_cart_btn" onclick="">
+                      장바구니 버튼
+                    </div>
+                  </div>
+                  <div class="box5_content_text">
+                    <div class="product_sort">청정원</div>
+                    <div class="product_name">달콤양념 오븐치킨</div>
+                    <div class="product_price_wrap">
+                      <span class="product_discount">10%</span>
+                      <span><span class="product_price">12,880</span>원</span>
+                      <span class="product_origin_price"><del>14,800</del></span>
+                    </div>
+                  </div>
+                </a>
+              </li>
+            </ul>
+
+            <div class="box5_control_wrap">
+              <span class="box5_control_bar">오늘만 할인상품1 보기</span>
+              <span class="box5_control_bar">오늘만 할인상품2 보기</span>
+              <span class="box5_control_ps pause">오늘만 할인상품 리스트 재생, 멈춤</span>
+              <!-- over, play 클래스 추가하여 background image-->
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <section class="main_section box6_container">
+        <div class="main_inner_section box6_wrap clearfix">
+          <h2 class="box_title box6_title">만나요, 청정원의 모든 브랜드</h2>
+          <div class="box6_content_wrap">
+            <div class="box6_top_wrap clearfix">
+              <div class="box6_control_btn box6_prev_btn">청정원 브랜드 이전보기</div>
+
+              <div class="brands_name_wrap">
+                <ul class="brand_name_list">
+                  <li class="brand_name">
+                    <a href=""><img class="brand_log_img brand_logo1"
+                        src="images/box6_logo_images/main_nav_logo1_h.png" alt="청정원"></a>
+                  </li>
+                  <li class="brand_name">
+                    <a href=""><img class="brand_log_img brand_logo2"
+                        src="images/box6_logo_images/main_nav_logo2.png" alt="호밍스"></a>
+                  </li>
+                  <li class="brand_name">
+                    <a href=""><img class="brand_log_img brand_logo3"
+                        src="images/box6_logo_images/main_nav_logo3.png" alt="안주야"></a>
+                  </li>
+                  <li class="brand_name">
+                    <a href=""><img class="brand_log_img brand_logo4"
+                        src="images/box6_logo_images/main_nav_logo4.png" alt="순창"></a>
+                  </li>
+                  <li class="brand_name">
+                    <a href=""><img class="brand_log_img brand_logo5"
+                        src="images/box6_logo_images/main_nav_logo5.png" alt="카레여왕"></a>
+                  </li>
+                  <li class="brand_name">
+                    <a href=""><img class="brand_log_img brand_logo6"
+                        src="images/box6_logo_images/main_nav_logo6.png" alt="햇살담은"></a>
+                  </li>
+                  <li class="brand_name">
+                    <a href=""><img class="brand_log_img brand_logo7"
+                        src="images/box6_logo_images/main_nav_logo7.png" alt="홍초"></a>
+                  </li>
+                  <li class="brand_name">
+                    <a href=""><img class="brand_log_img brand_logo8"
+                        src="images/box6_logo_images/main_nav_logo8.png" alt="맛선생"></a>
+                  </li>
+                </ul>
+              </div>
+              <div class="box6_control_btn box6_next_btn">청정원 브랜드 다음보기</div>
+            </div>
+
+            <ul class="brand_content_list">
+              <li class="brand_content brand_content1">
+                <div class="brand_banner">
+                  <span class="brand_banner_text">
+                    <span class="banner_title">오늘을 더 맛있게</span>
+                    <span>음식을 둘러싼 당신의 일상을 더욱 맛있고 풍요롭게<br /> 만드는 라이프푸드(Life Food)브랜드, 청정원입니다.</span>
+                  </span>
+                  <a class="brand_more_btn" href="#"><span class="brand_more_text">더보기</span></a>
+                  <img class="brand_banner_img" src="images/main_brand1.png" alt="">
+                </div>
+                <ul class="brand_products_list clearfix">
+                  <li class="product">
+                    <a href="javascript:void(0)">
+                      <img src="images/box6_brand1_img1.jpg" alt="제품이미지">
+                      <div class="product_hover_add_box">
+                        <div class="hover_cart_btn" onclick="">
+                          장바구니 버튼
+                        </div>
+                      </div>
+                      <div class="box6_content_text">
+                        <div class="product_sort">청정원</div>
+                        <div class="product_name">달콤양념 오븐치킨</div>
+                        <div class="product_price_wrap">
+                          <span class="product_discount">10%</span>
+                          <span><span class="product_price">12,880</span>원</span>
+                          <span class="product_origin_price"><del>14,800</del></span>
+                        </div>
+                        <div class="product_rate_wrap">
+                          <div class="full_star"></div>
+                          <div class="full_star"></div>
+                          <div class="full_star"></div>
+                          <div class="full_star"></div>
+                          <div class="almost_filled_star"></div>
+                          <span>4.9</span>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+
+                  <li class="product">
+                    <a href="javascript:void(0)">
+                      <img src="images/box6_brand1_img2.jpg" alt="제품이미지">
+                      <div class="product_hover_add_box">
+                        <div class="hover_cart_btn" onclick="">
+                          장바구니 버튼
+                        </div>
+                      </div>
+                      <div class="box6_content_text">
+                        <div class="product_sort">청정원</div>
+                        <div class="product_name">달콤양념 오븐치킨</div>
+                        <div class="product_price_wrap">
+                          <span class="product_discount">10%</span>
+                          <span><span class="product_price">12,880</span>원</span>
+                          <span class="product_origin_price"><del>14,800</del></span>
+                        </div>
+                        <div class="product_rate_wrap">
+                          <div class="full_star"></div>
+                          <div class="full_star"></div>
+                          <div class="full_star"></div>
+                          <div class="full_star"></div>
+                          <div class="almost_filled_star"></div>
+                          <span>4.9</span>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+
+                  <li class="product">
+                    <a href="javascript:void(0)">
+                      <img src="images/box6_brand1_img3.jpg" alt="제품이미지">
+                      <div class="product_hover_add_box">
+                        <div class="hover_cart_btn" onclick="">
+                          장바구니 버튼
+                        </div>
+                      </div>
+                      <div class="box6_content_text">
+                        <div class="product_sort">청정원</div>
+                        <div class="product_name">달콤양념 오븐치킨</div>
+                        <div class="product_price_wrap">
+                          <span class="product_discount">10%</span>
+                          <span><span class="product_price">12,880</span>원</span>
+                          <span class="product_origin_price"><del>14,800</del></span>
+                        </div>
+                        <div class="product_rate_wrap">
+                          <div class="full_star"></div>
+                          <div class="full_star"></div>
+                          <div class="full_star"></div>
+                          <div class="full_star"></div>
+                          <div class="almost_filled_star"></div>
+                          <span>4.9</span>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+
+                  <li class="product">
+                    <a href="javascript:void(0)">
+                      <img src="images/box6_brand1_img4.jpg" alt="제품이미지">
+                      <div class="product_hover_add_box">
+                        <div class="hover_cart_btn" onclick="">
+                          장바구니 버튼
+                        </div>
+                      </div>
+                      <div class="box6_content_text">
+                        <div class="product_sort">청정원</div>
+                        <div class="product_name">달콤양념 오븐치킨</div>
+                        <div class="product_price_wrap">
+                          <span class="product_discount">10%</span>
+                          <span><span class="product_price">12,880</span>원</span>
+                          <span class="product_origin_price"><del>14,800</del></span>
+                        </div>
+                        <div class="product_rate_wrap">
+                          <div class="full_star"></div>
+                          <div class="full_star"></div>
+                          <div class="full_star"></div>
+                          <div class="full_star"></div>
+                          <div class="almost_filled_star"></div>
+                          <span>4.9</span>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+
+              <li class="brand_content brand_content2">
+                <div class="brand_banner">
+                  <span class="brand_banner_text">
+                    <span class="banner_title">호밍스 메인요리</span>
+                    <span>신선한 생고기와 생야채를 제대로 담아내<br /> 집에서도 밖에서 먹는 것처럼 근사한 한 끼 식사</span>
+                  </span>
+                  <a class="brand_more_btn" href="#"><span class="brand_more_text">더보기</span></a>
+                  <img class="brand_banner_img" src="images/main_brand2.png" alt="">
+                </div>
+
+                <ul class="brand_products_list clearfix">
+                  <li class="product">
+                    <a href="javascript:void(0)">
+                      <img src="images/box6_brand2_img1.jpg" alt="제품이미지">
+                      <div class="product_hover_add_box">
+                        <div class="hover_cart_btn" onclick="">
+                          장바구니 버튼
+                        </div>
+                      </div>
+                      <div class="box6_content_text">
+                        <div class="product_sort">청정원</div>
+                        <div class="product_name">달콤양념 오븐치킨</div>
+                        <div class="product_price_wrap">
+                          <span class="product_discount">10%</span>
+                          <span><span class="product_price">12,880</span>원</span>
+                          <span class="product_origin_price"><del>14,800</del></span>
+                        </div>
+                        <div class="product_rate_wrap">
+                          <div class="full_star"></div>
+                          <div class="full_star"></div>
+                          <div class="full_star"></div>
+                          <div class="full_star"></div>
+                          <div class="almost_filled_star"></div>
+                          <span>4.9</span>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+
+                  <li class="product">
+                    <a href="javascript:void(0)">
+                      <img src="images/box6_brand2_img2.jpg" alt="제품이미지">
+                      <div class="product_hover_add_box">
+                        <div class="hover_cart_btn" onclick="">
+                          장바구니 버튼
+                        </div>
+                      </div>
+                      <div class="box6_content_text">
+                        <div class="product_sort">청정원</div>
+                        <div class="product_name">달콤양념 오븐치킨</div>
+                        <div class="product_price_wrap">
+                          <span class="product_discount">10%</span>
+                          <span><span class="product_price">12,880</span>원</span>
+                          <span class="product_origin_price"><del>14,800</del></span>
+                        </div>
+                        <div class="product_rate_wrap">
+                          <div class="full_star"></div>
+                          <div class="full_star"></div>
+                          <div class="full_star"></div>
+                          <div class="full_star"></div>
+                          <div class="almost_filled_star"></div>
+                          <span>4.9</span>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+
+                  <li class="product">
+                    <a href="javascript:void(0)">
+                      <img src="images/box6_brand2_img3.jpg" alt="제품이미지">
+                      <div class="product_hover_add_box">
+                        <div class="hover_cart_btn" onclick="">
+                          장바구니 버튼
+                        </div>
+                      </div>
+                      <div class="box6_content_text">
+                        <div class="product_sort">청정원</div>
+                        <div class="product_name">달콤양념 오븐치킨</div>
+                        <div class="product_price_wrap">
+                          <span class="product_discount">10%</span>
+                          <span><span class="product_price">12,880</span>원</span>
+                          <span class="product_origin_price"><del>14,800</del></span>
+                        </div>
+                        <div class="product_rate_wrap">
+                          <div class="full_star"></div>
+                          <div class="full_star"></div>
+                          <div class="full_star"></div>
+                          <div class="full_star"></div>
+                          <div class="almost_filled_star"></div>
+                          <span>4.9</span>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+
+                  <li class="product">
+                    <a href="javascript:void(0)">
+                      <img src="images/box6_brand2_img4.jpg" alt="제품이미지">
+                      <div class="product_hover_add_box">
+                        <div class="hover_cart_btn" onclick="">
+                          장바구니 버튼
+                        </div>
+                      </div>
+                      <div class="box6_content_text">
+                        <div class="product_sort">청정원</div>
+                        <div class="product_name">달콤양념 오븐치킨</div>
+                        <div class="product_price_wrap">
+                          <span class="product_discount">10%</span>
+                          <span><span class="product_price">12,880</span>원</span>
+                          <span class="product_origin_price"><del>14,800</del></span>
+                        </div>
+                        <div class="product_rate_wrap">
+                          <div class="full_star"></div>
+                          <div class="full_star"></div>
+                          <div class="full_star"></div>
+                          <div class="full_star"></div>
+                          <div class="almost_filled_star"></div>
+                          <span>4.9</span>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                </ul>
+              </li><!-- brand_content2 e -->
+
+              <li class="brand_content brand_content3">
+                <div class="brand_banner">
+                  <span class="brand_banner_text">
+                    <span class="banner_title">안주야</span>
+                    <span>대표 안주 맛집 스타일을 가정편의식 안주야로 재해석해<br /> 집에서도 간편하게 전문점 안주를 즐길 수 있습니다.</span>
+                  </span>
+                  <a class="brand_more_btn" href="#"><span class="brand_more_text">더보기</span></a>
+                  <img class="brand_banner_img" src="images/main_brand3.png" alt="">
+                </div>
+
+                <ul class="brand_products_list">
+                  <li class="product">
+                    <a href="javascript:void(0)">
+                      <img src="images/box6_brand3_img1.jpg" alt="제품이미지">
+                      <div class="product_hover_add_box">
+                        <div class="hover_cart_btn" onclick="">
+                          장바구니 버튼
+                        </div>
+                      </div>
+                      <div class="box6_content_text">
+                        <div class="product_sort">청정원</div>
+                        <div class="product_name">달콤양념 오븐치킨</div>
+                        <div class="product_price_wrap">
+                          <span class="product_discount">10%</span>
+                          <span><span class="product_price">12,880</span>원</span>
+                          <span class="product_origin_price"><del>14,800</del></span>
+                        </div>
+                        <div class="product_rate_wrap">
+                          <div class="full_star"></div>
+                          <div class="full_star"></div>
+                          <div class="full_star"></div>
+                          <div class="full_star"></div>
+                          <div class="almost_filled_star"></div>
+                          <span>4.9</span>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+
+                  <li class="product">
+                    <a href="javascript:void(0)">
+                      <img src="images/box6_brand3_img2.jpg" alt="제품이미지">
+                      <div class="product_hover_add_box">
+                        <div class="hover_cart_btn" onclick="">
+                          장바구니 버튼
+                        </div>
+                      </div>
+                      <div class="box6_content_text">
+                        <div class="product_sort">청정원</div>
+                        <div class="product_name">달콤양념 오븐치킨</div>
+                        <div class="product_price_wrap">
+                          <span class="product_discount">10%</span>
+                          <span><span class="product_price">12,880</span>원</span>
+                          <span class="product_origin_price"><del>14,800</del></span>
+                        </div>
+                        <div class="product_rate_wrap">
+                          <div class="full_star"></div>
+                          <div class="full_star"></div>
+                          <div class="full_star"></div>
+                          <div class="full_star"></div>
+                          <div class="almost_filled_star"></div>
+                          <span>4.9</span>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+
+                  <li class="product">
+                    <a href="javascript:void(0)">
+                      <img src="images/box6_brand3_img3.jpg" alt="제품이미지">
+                      <div class="product_hover_add_box">
+                        <div class="hover_cart_btn" onclick="">
+                          장바구니 버튼
+                        </div>
+                      </div>
+                      <div class="box6_content_text">
+                        <div class="product_sort">청정원</div>
+                        <div class="product_name">달콤양념 오븐치킨</div>
+                        <div class="product_price_wrap">
+                          <span class="product_discount">10%</span>
+                          <span><span class="product_price">12,880</span>원</span>
+                          <span class="product_origin_price"><del>14,800</del></span>
+                        </div>
+                        <div class="product_rate_wrap">
+                          <div class="full_star"></div>
+                          <div class="full_star"></div>
+                          <div class="full_star"></div>
+                          <div class="full_star"></div>
+                          <div class="almost_filled_star"></div>
+                          <span>4.9</span>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+
+                  <li class="product">
+                    <a href="javascript:void(0)">
+                      <img src="images/box6_brand3_img4.jpg" alt="제품이미지">
+                      <div class="product_hover_add_box">
+                        <div class="hover_cart_btn" onclick="">
+                          장바구니 버튼
+                        </div>
+                      </div>
+                      <div class="box6_content_text">
+                        <div class="product_sort">청정원</div>
+                        <div class="product_name">달콤양념 오븐치킨</div>
+                        <div class="product_price_wrap">
+                          <span class="product_discount">10%</span>
+                          <span><span class="product_price">12,880</span>원</span>
+                          <span class="product_origin_price"><del>14,800</del></span>
+                        </div>
+                        <div class="product_rate_wrap">
+                          <div class="full_star"></div>
+                          <div class="full_star"></div>
+                          <div class="full_star"></div>
+                          <div class="full_star"></div>
+                          <div class="almost_filled_star"></div>
+                          <span>4.9</span>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                </ul>
+              </li><!-- brand_content3 e -->
+
+              <li class="brand_content brand_content4">
+                <div class="brand_banner">
+                  <span class="brand_banner_text">
+                    <span class="banner_title">순창 고추장</span>
+                    <span>신선하고 맛있는 발효숙성 방식으로<br /> 맛과 건강까지 생각한 순창 고추장입니다.</span>
+                  </span>
+                  <a class="brand_more_btn" href="#"><span class="brand_more_text">더보기</span></a>
+                  <img class="brand_banner_img" src="images/main_brand4.png" alt="제품이미지">
+                </div>
+
+                <ul class="brand_products_list">
+                  <li class="product">
+                    <a href="javascript:void(0)">
+                      <img src="images/box6_brand4_img1.jpg" alt="제품이미지">
+                      <div class="product_hover_add_box">
+                        <div class="hover_cart_btn" onclick="">
+                          장바구니 버튼
+                        </div>
+                      </div>
+                      <div class="box6_content_text">
+                        <div class="product_sort">청정원</div>
+                        <div class="product_name">달콤양념 오븐치킨</div>
+                        <div class="product_price_wrap">
+                          <span class="product_discount">10%</span>
+                          <span><span class="product_price">12,880</span>원</span>
+                          <span class="product_origin_price"><del>14,800</del></span>
+                        </div>
+                        <div class="product_rate_wrap">
+                          <div class="full_star"></div>
+                          <div class="full_star"></div>
+                          <div class="full_star"></div>
+                          <div class="full_star"></div>
+                          <div class="almost_filled_star"></div>
+                          <span>4.9</span>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+
+                  <li class="product">
+                    <a href="javascript:void(0)">
+                      <img src="images/box6_brand4_img2.jpg" alt="">
+                      <div class="product_hover_add_box">
+                        <div class="hover_cart_btn" onclick="">
+                          장바구니 버튼
+                        </div>
+                      </div>
+                      <div class="box6_content_text">
+                        <div class="product_sort">청정원</div>
+                        <div class="product_name">달콤양념 오븐치킨</div>
+                        <div class="product_price_wrap">
+                          <span class="product_discount">10%</span>
+                          <span><span class="product_price">12,880</span>원</span>
+                          <span class="product_origin_price"><del>14,800</del></span>
+                        </div>
+                        <div class="product_rate_wrap">
+                          <div class="full_star"></div>
+                          <div class="full_star"></div>
+                          <div class="full_star"></div>
+                          <div class="full_star"></div>
+                          <div class="almost_filled_star"></div>
+                          <span>4.9</span>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+
+                  <li class="product">
+                    <a href="javascript:void(0)">
+                      <img src="images/box6_brand4_img3.jpg" alt="제품이미지">
+                      <div class="product_hover_add_box">
+                        <div class="hover_cart_btn" onclick="">
+                          장바구니 버튼
+                        </div>
+                      </div>
+                      <div class="box6_content_text">
+                        <div class="product_sort">청정원</div>
+                        <div class="product_name">달콤양념 오븐치킨</div>
+                        <div class="product_price_wrap">
+                          <span class="product_discount">10%</span>
+                          <span><span class="product_price">12,880</span>원</span>
+                          <span class="product_origin_price"><del>14,800</del></span>
+                        </div>
+                        <div class="product_rate_wrap">
+                          <div class="full_star"></div>
+                          <div class="full_star"></div>
+                          <div class="full_star"></div>
+                          <div class="full_star"></div>
+                          <div class="almost_filled_star"></div>
+                          <span>4.9</span>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+
+                  <li class="product">
+                    <a href="javascript:void(0)">
+                      <img src="images/box6_brand4_img4.jpg" alt="제품이미지">
+                      <div class="product_hover_add_box">
+                        <div class="hover_cart_btn" onclick="">
+                          장바구니 버튼
+                        </div>
+                      </div>
+                      <div class="box6_content_text">
+                        <div class="product_sort">청정원</div>
+                        <div class="product_name">달콤양념 오븐치킨</div>
+                        <div class="product_price_wrap">
+                          <span class="product_discount">10%</span>
+                          <span><span class="product_price">12,880</span>원</span>
+                          <span class="product_origin_price"><del>14,800</del></span>
+                        </div>
+                        <div class="product_rate_wrap">
+                          <div class="full_star"></div>
+                          <div class="full_star"></div>
+                          <div class="full_star"></div>
+                          <div class="full_star"></div>
+                          <div class="almost_filled_star"></div>
+                          <span>4.9</span>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                </ul>
+              </li><!-- brand_content4 e -->
+
+              <li class="brand_content brand_content5">
+                <div class="brand_banner">
+                  <span class="brand_banner_text">
+                    <span class="banner_title">프리미엄 카레여왕</span>
+                    <span>여왕의 방식 퐁드보 육수로 만들어<br /> 깊고 부드러운 프리미엄 카레입니다.</span>
+                  </span>
+                  <a class="brand_more_btn" href="#"><span class="brand_more_text">더보기</span></a>
+                  <img class="brand_banner_img" src="images/main_brand5.png" alt="제품이미지">
+                </div>
+
+                <ul class="brand_products_list">
+                  <li class="product">
+                    <a href="javascript:void(0)">
+                      <img src="images/box6_brand5_img1.jpg" alt="제품이미지">
+                      <div class="product_hover_add_box">
+                        <div class="hover_cart_btn" onclick="">
+                          장바구니 버튼
+                        </div>
+                      </div>
+                      <div class="box6_content_text">
+                        <div class="product_sort">청정원</div>
+                        <div class="product_name">달콤양념 오븐치킨</div>
+                        <div class="product_price_wrap">
+                          <span class="product_discount">10%</span>
+                          <span><span class="product_price">12,880</span>원</span>
+                          <span class="product_origin_price"><del>14,800</del></span>
+                        </div>
+                        <div class="product_rate_wrap">
+                          <div class="full_star"></div>
+                          <div class="full_star"></div>
+                          <div class="full_star"></div>
+                          <div class="full_star"></div>
+                          <div class="almost_filled_star"></div>
+                          <span>4.9</span>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+
+                  <li class="product">
+                    <a href="javascript:void(0)">
+                      <img src="images/box6_brand5_img2.jpg" alt="제품이미지">
+                      <div class="product_hover_add_box">
+                        <div class="hover_cart_btn" onclick="">
+                          장바구니 버튼
+                        </div>
+                      </div>
+                      <div class="box6_content_text">
+                        <div class="product_sort">청정원</div>
+                        <div class="product_name">달콤양념 오븐치킨</div>
+                        <div class="product_price_wrap">
+                          <span class="product_discount">10%</span>
+                          <span><span class="product_price">12,880</span>원</span>
+                          <span class="product_origin_price"><del>14,800</del></span>
+                        </div>
+                        <div class="product_rate_wrap">
+                          <div class="full_star"></div>
+                          <div class="full_star"></div>
+                          <div class="full_star"></div>
+                          <div class="full_star"></div>
+                          <div class="almost_filled_star"></div>
+                          <span>4.9</span>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+
+                  <li class="product">
+                    <a href="javascript:void(0)">
+                      <img src="images/box6_brand5_img3.jpg" alt="제품이미지">
+                      <div class="product_hover_add_box">
+                        <div class="hover_cart_btn" onclick="">
+                          장바구니 버튼
+                        </div>
+                      </div>
+                      <div class="box6_content_text">
+                        <div class="product_sort">청정원</div>
+                        <div class="product_name">달콤양념 오븐치킨</div>
+                        <div class="product_price_wrap">
+                          <span class="product_discount">10%</span>
+                          <span><span class="product_price">12,880</span>원</span>
+                          <span class="product_origin_price"><del>14,800</del></span>
+                        </div>
+                        <div class="product_rate_wrap">
+                          <div class="full_star"></div>
+                          <div class="full_star"></div>
+                          <div class="full_star"></div>
+                          <div class="full_star"></div>
+                          <div class="almost_filled_star"></div>
+                          <span>4.9</span>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+
+                  <li class="product">
+                    <a href="javascript:void(0)">
+                      <img src="images/box6_brand5_img4.jpg" alt="제품이미지">
+                      <div class="product_hover_add_box">
+                        <div class="hover_cart_btn" onclick="">
+                          장바구니 버튼
+                        </div>
+                      </div>
+                      <div class="box6_content_text">
+                        <div class="product_sort">청정원</div>
+                        <div class="product_name">달콤양념 오븐치킨</div>
+                        <div class="product_price_wrap">
+                          <span class="product_discount">10%</span>
+                          <span><span class="product_price">12,880</span>원</span>
+                          <span class="product_origin_price"><del>14,800</del></span>
+                        </div>
+                        <div class="product_rate_wrap">
+                          <div class="full_star"></div>
+                          <div class="full_star"></div>
+                          <div class="full_star"></div>
+                          <div class="full_star"></div>
+                          <div class="almost_filled_star"></div>
+                          <span>4.9</span>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                </ul>
+              </li><!-- brand_content5 e -->
+
+              <li class="brand_content brand_content6">
+                <div class="brand_banner">
+                  <span class="brand_banner_text">
+                    <span class="banner_title">두번 달여 더 진한 진간장</span>
+                    <span>'2단 달임 공법'은 간장 본연의 감칠맛과 진한 풍미를 살린<br />청정원 진간장만의 맛있는 비법입니다.</span>
+                  </span>
+                  <a class="brand_more_btn" href="#"><span class="brand_more_text">더보기</span></a>
+                  <img class="brand_banner_img" src="images/main_brand6.png" alt="제품이미지">
+                </div>
+
+                <ul class="brand_products_list">
+                  <li class="product">
+                    <a href="javascript:void(0)">
+                      <img src="images/box6_brand6_img1.jpg" alt="제품이미지">
+                      <div class="product_hover_add_box">
+                        <div class="hover_cart_btn" onclick="">
+                          장바구니 버튼
+                        </div>
+                      </div>
+                      <div class="box6_content_text">
+                        <div class="product_sort">청정원</div>
+                        <div class="product_name">달콤양념 오븐치킨</div>
+                        <div class="product_price_wrap">
+                          <span class="product_discount">10%</span>
+                          <span><span class="product_price">12,880</span>원</span>
+                          <span class="product_origin_price"><del>14,800</del></span>
+                        </div>
+                        <div class="product_rate_wrap">
+                          <div class="full_star"></div>
+                          <div class="full_star"></div>
+                          <div class="full_star"></div>
+                          <div class="full_star"></div>
+                          <div class="almost_filled_star"></div>
+                          <span>4.9</span>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+
+                  <li class="product">
+                    <a href="javascript:void(0)">
+                      <img src="images/box6_brand6_img2.jpg" alt="제품이미지">
+                      <div class="product_hover_add_box">
+                        <div class="hover_cart_btn" onclick="">
+                          장바구니 버튼
+                        </div>
+                      </div>
+                      <div class="box6_content_text">
+                        <div class="product_sort">청정원</div>
+                        <div class="product_name">달콤양념 오븐치킨</div>
+                        <div class="product_price_wrap">
+                          <span class="product_discount">10%</span>
+                          <span><span class="product_price">12,880</span>원</span>
+                          <span class="product_origin_price"><del>14,800</del></span>
+                        </div>
+                        <div class="product_rate_wrap">
+                          <div class="full_star"></div>
+                          <div class="full_star"></div>
+                          <div class="full_star"></div>
+                          <div class="full_star"></div>
+                          <div class="almost_filled_star"></div>
+                          <span>4.9</span>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+
+                  <li class="product">
+                    <a href="javascript:void(0)">
+                      <img src="images/box6_brand6_img3.jpg" alt="제품이미지">
+                      <div class="product_hover_add_box">
+                        <div class="hover_cart_btn" onclick="">
+                          장바구니 버튼
+                        </div>
+                      </div>
+                      <div class="box6_content_text">
+                        <div class="product_sort">청정원</div>
+                        <div class="product_name">달콤양념 오븐치킨</div>
+                        <div class="product_price_wrap">
+                          <span class="product_discount">10%</span>
+                          <span><span class="product_price">12,880</span>원</span>
+                          <span class="product_origin_price"><del>14,800</del></span>
+                        </div>
+                        <div class="product_rate_wrap">
+                          <div class="full_star"></div>
+                          <div class="full_star"></div>
+                          <div class="full_star"></div>
+                          <div class="full_star"></div>
+                          <div class="almost_filled_star"></div>
+                          <span>4.9</span>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+
+                  <li class="product">
+                    <a href="javascript:void(0)">
+                      <img src="images/box6_brand6_img4.jpg" alt="제품이미지">
+                      <div class="product_hover_add_box">
+                        <div class="hover_cart_btn" onclick="">
+                          장바구니 버튼
+                        </div>
+                      </div>
+                      <div class="box6_content_text">
+                        <div class="product_sort">청정원</div>
+                        <div class="product_name">달콤양념 오븐치킨</div>
+                        <div class="product_price_wrap">
+                          <span class="product_discount">10%</span>
+                          <span><span class="product_price">12,880</span>원</span>
+                          <span class="product_origin_price"><del>14,800</del></span>
+                        </div>
+                        <div class="product_rate_wrap">
+                          <div class="full_star"></div>
+                          <div class="full_star"></div>
+                          <div class="full_star"></div>
+                          <div class="full_star"></div>
+                          <div class="almost_filled_star"></div>
+                          <span>4.9</span>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                </ul>
+              </li><!-- brand_content6 e -->
+
+              <li class="brand_content brand_content7">
+                <div class="brand_banner">
+                  <span class="brand_banner_text">
+                    <span class="banner_title">새콤한 홍초</span>
+                    <span>발효식초 복합물 홍초와 함께<br /> 일상의 활력을 느껴보세요!</span>
+                  </span>
+                  <a class="brand_more_btn" href="#"><span class="brand_more_text">더보기</span></a>
+                  <img class="brand_banner_img" src="images/main_brand7.png" alt="제품이미지">
+                </div>
+
+                <ul class="brand_products_list">
+                  <li class="product">
+                    <a href="javascript:void(0)">
+                      <img src="images/box6_brand7_img1.jpg" alt="">
+                      <div class="product_hover_add_box">
+                        <div class="hover_cart_btn" onclick="">
+                          장바구니 버튼
+                        </div>
+                      </div>
+                      <div class="box6_content_text">
+                        <div class="product_sort">청정원</div>
+                        <div class="product_name">달콤양념 오븐치킨</div>
+                        <div class="product_price_wrap">
+                          <span class="product_discount">10%</span>
+                          <span><span class="product_price">12,880</span>원</span>
+                          <span class="product_origin_price"><del>14,800</del></span>
+                        </div>
+                        <div class="product_rate_wrap">
+                          <div class="full_star"></div>
+                          <div class="full_star"></div>
+                          <div class="full_star"></div>
+                          <div class="full_star"></div>
+                          <div class="almost_filled_star"></div>
+                          <span>4.9</span>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+
+                  <li class="product">
+                    <a href="javascript:void(0)">
+                      <img src="images/box6_brand7_img2.jpg" alt="제품이미지">
+                      <div class="product_hover_add_box">
+                        <div class="hover_cart_btn" onclick="">
+                          장바구니 버튼
+                        </div>
+                      </div>
+                      <div class="box6_content_text">
+                        <div class="product_sort">청정원</div>
+                        <div class="product_name">달콤양념 오븐치킨</div>
+                        <div class="product_price_wrap">
+                          <span class="product_discount">10%</span>
+                          <span><span class="product_price">12,880</span>원</span>
+                          <span class="product_origin_price"><del>14,800</del></span>
+                        </div>
+                        <div class="product_rate_wrap">
+                          <div class="full_star"></div>
+                          <div class="full_star"></div>
+                          <div class="full_star"></div>
+                          <div class="full_star"></div>
+                          <div class="almost_filled_star"></div>
+                          <span>4.9</span>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+
+                  <li class="product">
+                    <a href="javascript:void(0)">
+                      <img src="images/box6_brand7_img3.jpg" alt="제품이미지">
+                      <div class="product_hover_add_box">
+                        <div class="hover_cart_btn" onclick="">
+                          장바구니 버튼
+                        </div>
+                      </div>
+                      <div class="box6_content_text">
+                        <div class="product_sort">청정원</div>
+                        <div class="product_name">달콤양념 오븐치킨</div>
+                        <div class="product_price_wrap">
+                          <span class="product_discount">10%</span>
+                          <span><span class="product_price">12,880</span>원</span>
+                          <span class="product_origin_price"><del>14,800</del></span>
+                        </div>
+                        <div class="product_rate_wrap">
+                          <div class="full_star"></div>
+                          <div class="full_star"></div>
+                          <div class="full_star"></div>
+                          <div class="full_star"></div>
+                          <div class="almost_filled_star"></div>
+                          <span>4.9</span>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+
+                  <li class="product">
+                    <a href="javascript:void(0)">
+                      <img src="images/box6_brand7_img4.jpg" alt="제품이미지">
+                      <div class="product_hover_add_box">
+                        <div class="hover_cart_btn" onclick="">
+                          장바구니 버튼
+                        </div>
+                      </div>
+                      <div class="box6_content_text">
+                        <div class="product_sort">청정원</div>
+                        <div class="product_name">달콤양념 오븐치킨</div>
+                        <div class="product_price_wrap">
+                          <span class="product_discount">10%</span>
+                          <span><span class="product_price">12,880</span>원</span>
+                          <span class="product_origin_price"><del>14,800</del></span>
+                        </div>
+                        <div class="product_rate_wrap">
+                          <div class="full_star"></div>
+                          <div class="full_star"></div>
+                          <div class="full_star"></div>
+                          <div class="full_star"></div>
+                          <div class="almost_filled_star"></div>
+                          <span>4.9</span>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                </ul>
+              </li><!-- brand_content7 e -->
+
+              <li class="brand_content brand_content8">
+                <div class="brand_banner">
+                  <span class="brand_banner_text">
+                    <span class="banner_title">맛선생</span>
+                    <span>자연재로 조미료 맛선생으로 쉽고 편리하게<br />우리집 식탁을 건강하게 바꿔보세요.</span>
+                  </span>
+                  <a class="brand_more_btn" href="#"><span class="brand_more_text">더보기</span></a>
+                  <img class="brand_banner_img" src="images/main_brand8.png" alt="제품이미지">
+                </div>
+
+                <ul class="brand_products_list">
+                  <li class="product">
+                    <a href="javascript:void(0)">
+                      <img src="images/box6_brand8_img1.jpg" alt="제품이미지">
+                      <div class="product_hover_add_box">
+                        <div class="hover_cart_btn" onclick="">
+                          장바구니 버튼
+                        </div>
+                      </div>
+                      <div class="box6_content_text">
+                        <div class="product_sort">청정원</div>
+                        <div class="product_name">달콤양념 오븐치킨</div>
+                        <div class="product_price_wrap">
+                          <span class="product_discount">10%</span>
+                          <span><span class="product_price">12,880</span>원</span>
+                          <span class="product_origin_price"><del>14,800</del></span>
+                        </div>
+                        <div class="product_rate_wrap">
+                          <div class="full_star"></div>
+                          <div class="full_star"></div>
+                          <div class="full_star"></div>
+                          <div class="full_star"></div>
+                          <div class="almost_filled_star"></div>
+                          <span>4.9</span>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+
+                  <li class="product">
+                    <a href="javascript:void(0)">
+                      <img src="images/box6_brand8_img2.jpg" alt="제품이미지">
+                      <div class="product_hover_add_box">
+                        <div class="hover_cart_btn" onclick="">
+                          장바구니 버튼
+                        </div>
+                      </div>
+                      <div class="box6_content_text">
+                        <div class="product_sort">청정원</div>
+                        <div class="product_name">달콤양념 오븐치킨</div>
+                        <div class="product_price_wrap">
+                          <span class="product_discount">10%</span>
+                          <span><span class="product_price">12,880</span>원</span>
+                          <span class="product_origin_price"><del>14,800</del></span>
+                        </div>
+                        <div class="product_rate_wrap">
+                          <div class="full_star"></div>
+                          <div class="full_star"></div>
+                          <div class="full_star"></div>
+                          <div class="full_star"></div>
+                          <div class="almost_filled_star"></div>
+                          <span>4.9</span>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+
+                  <li class="product">
+                    <a href="javascript:void(0)">
+                      <img src="images/box6_brand8_img3.jpg" alt="제품이미지">
+                      <div class="product_hover_add_box">
+                        <div class="hover_cart_btn" onclick="">
+                          장바구니 버튼
+                        </div>
+                      </div>
+                      <div class="box6_content_text">
+                        <div class="product_sort">청정원</div>
+                        <div class="product_name">달콤양념 오븐치킨</div>
+                        <div class="product_price_wrap">
+                          <span class="product_discount">10%</span>
+                          <span><span class="product_price">12,880</span>원</span>
+                          <span class="product_origin_price"><del>14,800</del></span>
+                        </div>
+                        <div class="product_rate_wrap">
+                          <div class="full_star"></div>
+                          <div class="full_star"></div>
+                          <div class="full_star"></div>
+                          <div class="full_star"></div>
+                          <div class="almost_filled_star"></div>
+                          <span>4.9</span>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+
+                  <li class="product">
+                    <a href="javascript:void(0)">
+                      <img src="images/box6_brand8_img4.jpg" alt="제품이미지">
+                      <div class="product_hover_add_box">
+                        <div class="hover_cart_btn" onclick="">
+                          장바구니 버튼
+                        </div>
+                      </div>
+                      <div class="box6_content_text">
+                        <div class="product_sort">청정원</div>
+                        <div class="product_name">달콤양념 오븐치킨</div>
+                        <div class="product_price_wrap">
+                          <span class="product_discount">10%</span>
+                          <span><span class="product_price">12,880</span>원</span>
+                          <span class="product_origin_price"><del>14,800</del></span>
+                        </div>
+                        <div class="product_rate_wrap">
+                          <div class="full_star"></div>
+                          <div class="full_star"></div>
+                          <div class="full_star"></div>
+                          <div class="full_star"></div>
+                          <div class="almost_filled_star"></div>
+                          <span>4.9</span>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                </ul>
+              </li><!-- brand_content8 e -->
+            </ul><!-- brand_content_list e -->
+
+          </div>
+        </div>
+      </section>
+    </main><!-- container e -->
+
+
+    <footer class="footer_contianer clearfix">
+      <div class="footer_wrap">
+        <section class="footer_info_top clearfix">
+          <ul class="footer_info_top_list">
+            <li><a href="">회사소개</a></li>
+            <li><a href="">브랜드 스토리</a></li>
+            <li><a href="">개인정보처리방침</a></li>
+            <li><a href="">서비스 이용약관</a></li>
+            <li><a href="">제휴 및 입점문의</a></li>
+            <li><a href="">고객센터</a></li>
+          </ul>
+
+          <a href="javascript:void(0)" class="family_site_btn">Family Site</a>
+          <ul class="family_site_list">
+            <li><a href="javascript:void(0)" title="새창으로 열림" target="_blank">대상(주)</a></li>
+            <li><a href="javascript:void(0)" title="새창으로 열림" target="_blank">대상베스트코(주)</a></li>
+            <li><a href="javascript:void(0)" title="새창으로 열림" target="_blank">대상에프앤비</a></li>
+            <li><a href="javascript:void(0)" title="새창으로 열림" target="_blank">초록마을</a></li>
+            <li><a href="javascript:void(0)" title="새창으로 열림" target="_blank">대상푸드플러스</a></li>
+            <li><a href="javascript:void(0)" title="새창으로 열림" target="_blank">청정원</a></li>
+            <li><a href="javascript:void(0)" title="새창으로 열림" target="_blank">동서건설(주)</a></li>
+            <li><a href="javascript:void(0)" title="새창으로 열림" target="_blank">유티시인베스트먼트(주)</a></li>
+          </ul>
+        </section>
+
+        <section class="footer_info clearfix">
+          <div class="info_logo fl">
+            <a class="footer_logo footer_company_logo" href="" target="_blank"><span>청정원로고</span>
+          </div>
+
+          <div class="info_company fl">
+            <div class="company_name">(주)청 정 원</div>
+            <address class="company_detail">
+              <div class="address_wrap clearfix">
+                <dl>
+                  <dt>대상(주)</dt>
+                  <dd></dd>
+                </dl>
+                <dl>
+                  <dt>사업자 등록번호</dt>
+                  <dd>123-456-7890</dd>
+                </dl>
+                <dl>
+                  <dt>대표이사</dt>
+                  <dd>이사님</dd>
+                </dl>
+                <dl>
+                  <dt>주소</dt>
+                  <dd>서울시 종로구 1030</dd>
+                  <dl>
+                    <dt>제품관련 고객상담</dt>
+                    <dd>080-019-9119</dd>
+                  </dl>
+                  <dl>
+                    <dt>상담시간</dt>
+                    <dd>평일 09:00~17:30 토, 일요일, 공휴일 휴무</dd>
+                  </dl>
+                  <dl>
+                    <dt>개인정보 보호책임자</dt>
+                    <dd>윤한권</dd>
+                  </dl>
+              </div>
+            </address>
+            <div class="company_copyright">
+              <p>COPYRIGHT 청정원. ALL RIGHTS RESERVED.</p>
+            </div>
+          </div>
+
+          <div class="info_cs fr">
+            <div class="info_cs_img">지금 전화하면 바로 주문 가능, 전화주문예약하기</div>
+            <span class="cs_call">고객센터 <strong>080-080-8864</strong></span>
+            <span class="cs_time">평일 : <em>09:00 - 18:00</em></span>
+            <span class="cs_lunch_time">점심시간 : <em> 12:00PM ~ 01:00PM </em></span>
+          </div>
+
+        </section>
+      </div>
+
+      <section class="floating_menu_wrap">
+        <div class="recent_looked_container">
+          <div class="recent_looked_wrap">
+            <button class="recent_looked_btn">최근 본 상품</button>
+            <div class="recent_looked_img_container no-data">
+              <span class="no_looked_text">최근 본 상품이 없습니다.</span>
+              <!-- <a href=""><img class="recent_looked_img" src="images/main_brand3.png" alt="최근본 상품이미지"></a>
+              <a href=""><img class="recent_looked_img" src="images/main_brand4.png" alt="최근본 상품이미지"></a>
+              <a href=""><img class="recent_looked_img" src="images/main_brand5.png" alt="최근본 상품이미지"></a> -->
+            </div>
+          </div>
+        </div>
+        <button class="scroll_top_btn" type="button">TOP</button>
+      </section>
+
+
+    </footer>
+
+
+  </div><!-- wrapper e -->
+</body>
+
+</html>

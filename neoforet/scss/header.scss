@@ -1,0 +1,218 @@
+
+@import "./mixin";
+
+.wrapper{
+  position:$rel;
+  width:$wrapSize;
+  height: $wrapSize;
+}
+.header_{
+  width:$wrapSize;
+  position:fixed;
+  z-index: 10;
+  top:0;
+  left:0;
+  .header_wrap{
+    width:$wrapSize;
+    
+    .logo{
+      float:left;
+      margin: 15px 0 0 3%;
+      &>a{
+        display:inline-block;
+        width:152px;
+        height: 36px;
+        text-indent: -9999rem;
+        background:url(../images/main_logo.png) no-repeat 0 0 / cover;
+      }
+    }
+    .header_menu_wrap{
+      float:right;
+      margin:25px 3% 0 0;
+      &>a{
+        display: inline-block;
+        text-indent: -9999rem;
+        width:21px;
+        height:22px;
+        margin-right: 10px;
+      }
+      .nav_btn{
+        position: $rel;
+        .nav_btn_line1{
+          position:$ab;
+          display: inline-block;
+          top:0;
+          left:0;
+          width:20px;
+          height:2px;
+          border-radius: 1px;
+          background-color: #fff;
+          transition: transform 0.5s ease-in-out;
+          
+        }
+        @for $i from 1 through 2{
+          &>span:nth-child(#{$i+1}){
+          @extend .nav_btn_line1;
+            top:8px * $i;
+          }
+        }
+      }
+      .search_btn,
+      .language_btn{
+        background: url(../images/header_nav_icons.png) no-repeat 0 0;
+      }
+      .search_btn{
+        background-position: 0 0;
+      }
+      .language_btn{
+        background-position: -23px 0;
+      }
+      
+    }
+  }
+  .menu_nav,
+  .search_wrap{
+    @include settingbasicWrapVal(100vw, 100vh , absolute);
+    top:0;
+    left:0;
+    z-index: -1;
+  }
+
+}
+.menu_nav{
+  background-color: #cadb3c;
+  display:none;
+  .menu_list{
+    position:$rel;
+    padding: 20% 10%; /* 위 패딩 모바일 변동 */
+    box-sizing: border-box;
+    & > li{
+      margin-bottom: 10px;
+      & > a{
+        font-size: 2rem;
+        font-weight: 600;
+        color:#fff;
+      }
+      & > a:hover{
+        color:#6e6c44;
+      }
+      .sub_menu_list{
+        @include settingbasicWrapVal(50vw, 100vh , absolute);
+        top:0;
+        right:-50vw;/* js처리  0, -50vw*/
+        padding: 20% 10%;
+        background-color: #ececec;
+        font-size: 1.5rem;
+        font-weight: 600;
+        box-sizing: border-box;
+        & > li{
+          margin-bottom: 10px;
+          &>a{
+            color:#777;
+          }
+          &>a:hover{
+            color:#222;
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+  .nav_wrap_close_btn{
+    text-indent: -9999rem;
+    margin-bottom: 5px;
+    cursor:pointer;
+    &>span{
+      position:$ab;
+      display: inline-block;
+      top:80px;
+      left:30px;
+      width:20px;
+      height:2px;
+      border-radius: 1px;
+      background-color: #fff;
+      transform: rotate(45deg);
+    }
+    &>span:last-child{
+      transform: rotate(135deg);
+    }
+  }
+}
+.search_wrap{
+  display: none; /* js처리 */
+  background-color:#6e6c44;
+  padding:45vh 0;
+  .serach_all_wrap{
+    position: $rel;
+    width:60%;
+    margin: 0 auto;
+    .search_wrap_close_btn{
+      display:inline-block;     
+      position: $rel;
+      text-indent: -9999rem;
+      margin-bottom: 5px;
+      cursor:pointer;
+      &>span{
+        position:$ab;
+        display: inline-block;
+        top:-15px;
+        right:10px;
+        width:20px;
+        height:2px;
+        border-radius: 1px;
+        background-color: #fff;
+        transform: rotate(45deg);
+      }
+      &>span:last-child{
+        transform: rotate(135deg);
+      }
+    }
+    .search_form{
+      position:$rel;
+      .search_value{
+        width:100%;
+        padding:8px 3px;
+        border:none;
+        border-radius: 3px;
+      }
+      .search_submit_btn{
+        position: $ab;
+        top:4px;
+        right:0;
+        width:21px;
+        height:22px;
+        border:none;
+        background:url(../images/header_nav_icons.png) no-repeat -47px 0 ;
+        text-indent: -9999rem;
+        display: block;
+        cursor: pointer;
+      }
+    }
+  }
+  
+}
+
+.view_location_nav{
+  position:fixed;
+  left:3%;
+  bottom:10px;
+  z-index: 1;
+  ul{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    .section_link{
+      position:$rel;
+      display:block;
+      text-indent: -9999rem;
+      width:15px;
+      height:25px;
+      background: url(../images/view_location_nav_icons.png) no-repeat 0 0;
+      margin-right: 8px;
+    }
+    .section_link.location_selected{
+      background: url(../images/view_location_nav_icons.png) no-repeat -17px 0;
+    }
+  }
+}
+

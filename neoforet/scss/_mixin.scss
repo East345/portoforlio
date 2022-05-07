@@ -1,0 +1,63 @@
+@import "./variables";
+
+@mixin basicWrapVal {
+  width:$wrapSize;
+  height:$wrapSize;
+  position:$rel;
+}
+@mixin settingbasicWrapVal($w, $h, $pos:relative) {
+  width: if(unitless($w),#{$w}px, $w);
+  height: if(unitless($h),#{$h}px, $h);
+  position:$pos;
+  @content;
+}
+@mixin settingPositionCenter{
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform: translate(-50%, -50%);
+}
+@mixin makeAfter($w, $h, $left, $top){
+  content:'';
+  width:$w;
+  height:$h;
+  position:absolute;
+  top: $top;
+  left: $left;
+}
+@mixin settingAbsoluteLeftPosition ($l, $t, $pos:absolute){
+  left:$l;
+  top:$t;
+  position:$pos;
+  transform: translateY(-50%);
+}
+@mixin settingAbsoluteRightPosition ($r, $t, $pos:absolute){
+  right:$r;
+  top:$t;
+  position:$pos;
+  transform: translateY(-50%);
+}
+
+@mixin makeArrow($deg) {
+  content:'';
+  width:6px;
+  height:6px;
+  border-top: 2px solid #6e6c44;
+  border-left: 2px solid #6e6c44;
+  position:$ab;
+  top:50%;
+  left:50%;
+  transform: translate(-50%,-50%) rotate($deg);
+}
+
+@mixin animation ($delay, $duration, $name, $iteration) {
+  animation-delay: $delay;
+  animation-duration: $duration;
+  animation-name: $name;
+  animation-iteration-count: $iteration;
+}
+@mixin keyframe($animaition_name){
+  @keyframes #{$animaition_name}{
+    @content;
+  }
+} 

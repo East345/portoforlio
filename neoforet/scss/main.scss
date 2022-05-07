@@ -1,0 +1,750 @@
+@import "./mixin";
+@import "./header.scss";
+
+
+.container {
+  width: $wrapSize*6;
+  height: $wrapSize;
+  position: $rel;
+  box-sizing: border-box;
+  display: flex;
+  overflow-y: hidden;
+}
+
+.section_ {
+  /* width:16.666666667%; 
+    float:left; */
+  /* float:left 대신에 부모요소에 display:flex를 줘도됨 */
+
+  @include basicWrapVal();
+
+  box-sizing: border-box;
+  overflow: hidden;
+
+  @for $i from 1 through 6 {
+    @if($i%2==0) {
+      &:nth-child(#{$i}) {
+        background-color: #ececec;
+      }
+    }
+
+    @else {
+      &:nth-child(#{$i}) {
+        background-color: #ffff;
+      }
+    }
+  }
+
+  .section_title {
+    font: {
+      size: 2.5rem;
+      weight: 900;
+    }
+  }
+}
+
+.first_visual_sec {
+  .visual_video {
+    @include basicWrapVal();
+
+    .video {
+      @include settingPositionCenter;
+      min-width: 100%;
+      min-height: 100%;
+      width: auto;
+      height: auto;
+    }
+  }
+
+  .visual_text_wrap {
+    @include settingPositionCenter;
+    text-align: center;
+
+    .visual_title {
+      color: #fff;
+      margin-bottom: 10px;
+
+      font: {
+        weight: 900;
+        size: 3rem
+      }
+    }
+
+    .visual_text {
+      color: #fff;
+      font-size: 2rem;
+    }
+  }
+}
+
+.product_info_sec {
+  display: flex;
+
+  .product_info_half1 {
+    @include settingbasicWrapVal(50%, $wrapSize);
+    background: url(../images/product_half1_logobg.png) no-repeat center center/ 20vw 15vw #ececec;
+
+    .product_info_title {
+      @include settingAbsoluteLeftPosition(10%, 50%);
+    }
+
+    .product_control_wrap {
+      @include settingAbsoluteLeftPosition(10%, 72%);
+      
+
+      .product_control_btn {
+        display: inline-block;
+        width: 30px;
+        height: 30px;
+        border: 1px solid #777;
+        border-radius: 50%;
+        text-indent: -9999rem;
+        position: $rel;
+        cursor: pointer;
+      }
+
+      .product_prev_btn:after {
+        @include makeArrow(-45deg);
+      }
+
+      .product_next_btn:after {
+        @include makeArrow(135deg);
+      }
+
+    }
+
+    .product_count_wrap {
+      @extend .product_control_wrap;
+      top: 77%;
+      .present_product_count{
+        color:#6e6c44;
+        font-weight: 600;
+      }
+    }
+  }
+
+  .product_info_half2 {
+    @include settingbasicWrapVal(50%, $wrapSize);
+    background: url(../images/product_half3_bg.jpg) no-repeat center center/cover;
+  }
+
+  .product_list_wrap {
+    position: $ab;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    width: 65%;
+    height: 300px;
+    overflow: hidden;
+
+    .product_list {
+      width: 300%;
+      position: $ab;
+      top: 50%;
+      transform: translateY(-50%);
+
+      & > li {
+        float: left;
+        margin-right: 1.5%;
+        width: 20vw;
+        height: 270px;
+        position:$rel;
+
+
+        & > a {
+          display: block;
+          width:100%;
+          height:100%;
+          text-align: center;
+
+          & > span {
+            position: $ab;
+            left: 10%;
+            bottom: 10%;
+            color: #6e6c44;
+
+            font: {
+              weight: 600;
+              size: 1.2rem;
+            }
+          }
+        }
+      }
+    }
+
+  }
+}
+
+.eco_management_sec {
+  padding: 10vh 0;
+  .eco_management_title {
+    margin-top: 100px;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+
+  .eco_cycle_content_all_wrap {
+    @include settingbasicWrapVal(90%, 100%, relative);
+    margin: 0 auto;
+
+    .eco_cycle_content_wrap {
+      @include settingbasicWrapVal(70%, 300px);
+      background-color: #cecece;
+      border-radius: 10px;
+      float: left;
+      margin-right: 3%;
+      padding: 30px 4%;
+      box-sizing: border-box;
+
+      .eco_cycle_content_sub_title,
+      .eco_cycle_content_title {
+        text-align: center;
+        font-weight: 600;
+        font-size: 1.3rem;
+      }
+
+      .eco_cycle_content_title {
+        margin-top: 5px;
+        font-size: 1.5rem;
+      }
+
+      .eco_cycle_list {
+        margin-top: 10px;
+
+        & > li {
+          float: left;
+          width: 23%;
+          padding-top: 70px;
+          margin-right: 2%;
+          box-sizing: border-box;
+          position: $rel;
+
+          &:after {
+            @include makeAfter(80px, 69px, 50%, 0);
+            transform: translateX(-50%);
+            background: url(../images/eco_management_img.png) no-repeat 0 0 / cover;
+          }
+
+          &:nth-child(2):after {
+            background-position: -84px 0;
+          }
+
+          &:nth-child(3):after {
+            background-position: -168px 0;
+          }
+
+          &:nth-child(4):after {
+            background-position: -254px 0;
+          }
+
+          .each_cycle_des_title {
+            text-align: center;
+            font-weight: 600;
+            margin-top: 10px;
+            font-size: 0.85rem;
+            letter-spacing: -0.1rem;
+          }
+
+          & > ul {
+            margin-top: 20px;
+
+            & > li {
+              font-size: 0.84rem;
+              letter-spacing: -0.09rem;
+              margin-top: 3px;
+              position: $rel;
+              text-align: center;
+            }
+          }
+        }
+      }
+    }
+
+    .eco_cycle_more_wrap {
+      @include settingbasicWrapVal(27%, 300px);
+      float: left;
+
+      & > div {
+        @include settingbasicWrapVal($wrapSize, 49%);
+        
+        text-align: center;
+        border-radius: 10px;
+
+        &:nth-child(1) {
+          background: url(../images/eco_index_link_img1.jpg) no-repeat 0 0 / cover;
+          margin-bottom: 2%;
+        }
+
+        &:nth-child(2) {
+          background: url(../images/eco_index_link_img2.jpg) no-repeat 0 0 / cover;
+        }
+
+        & > a {
+          @include settingbasicWrapVal($wrapSize, $wrapSize);
+          display: block;
+        }
+
+        .each_eco_cycle_name {
+          width: 90%;
+          color: #fff;
+          font-weight: 600;
+          font-size: 1.3rem;
+          @include settingPositionCenter();
+        }
+      }
+    }
+
+  }
+}
+
+.eco_certificate_sec {
+  padding: 8vh 0; 
+  .eco_certificate_title {
+    margin-top: 100px;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+
+  .eco_certificate_text {
+    text-align: center;
+    font-size: 1.5rem;
+
+    &>span {
+      font-weight: 600;
+      color: #6e6c44;
+    }
+  }
+
+  .eco_certificate_list {
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 50px;
+
+    $certificates: (cer_fsc, cer_fda, cer_pts, cer_com, cer_ul);
+
+    & > li {
+      float: left;
+      width: 18.4%;
+      height: 250px;
+      border-radius: 10px;
+      margin-right: 2%;
+      text-indent: -9999rem;
+
+      @each $certificate in $certificates {
+        &.#{$certificate} {
+          background: url("../images/feature_#{$certificate}.png") no-repeat center center / cover;
+        }
+      }
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+}
+
+.about_sec {
+  .about_sec_bg_wrap {
+    @include basicWrapVal();
+    overflow: hidden;
+
+    .about_sec_bg1 {
+      float: left;
+      @include settingbasicWrapVal(33.333%, 100%, $rel);
+      background: url(../images/about_bg1.jpg) no-repeat 0 0 / cover;
+    }
+
+    .about_sec_bg2 {
+      float: left;
+      @include settingbasicWrapVal(33.333%, 100%, $rel);
+      background: url(../images/about_bg2.jpg) no-repeat center center / cover;
+
+      .about_detail_view {
+        font-weight: 600;
+        text-align: center;
+        padding: 3%;
+        border: 1px solid #222;
+        border-radius: 30px;
+        box-sizing: border-box;
+        position: $ab;
+        bottom: 10%;
+        left: 50%;
+        transform: translateX(-50%);
+        transition: backgroundColor 0.5s ease;
+      }
+
+      .about_detail_view:hover {
+        background-color: #222;
+        color: #fff;
+      }
+    }
+
+    .about_sec_bg3 {
+      float: left;
+      @include settingbasicWrapVal(33.333%, 100%, $rel);
+      background: url(../images/about_bg3.png) no-repeat right center / cover;
+    }
+  }
+
+  .eco_about_title {
+    color: #fff;
+    text-align: right;
+    font-size: 2.5rem;
+    @include settingAbsoluteLeftPosition(10%, 50%);
+    transform: translateY(-50%);
+  }
+
+  .about_content_title {
+    color: #fff;
+    font-weight: 600;
+    font-size: 1.5rem;
+    margin-bottom: 8px;
+  }
+
+  .about_content_text {
+    color: #fff;
+    font-size: 1.2rem;
+  }
+
+  .each_about_content_wrap1 {
+    @include settingAbsoluteRightPosition(80px, 30%);
+    transform: translateY(-50%);
+
+    .about_content_text {
+      position: $rel;
+
+      &:after {
+        @include makeAfter(80%, 1px, -85%, 50%);
+        background-color: #fff;
+        transform: translateY(-50%);
+      }
+    }
+  }
+
+  .each_about_content_wrap2 {
+    @include settingAbsoluteRightPosition(50px, 80%);
+    transform: translateY(-50%);
+
+    .about_content_text {
+      position: $rel;
+
+      &:after {
+        @include makeAfter(30%, 1px, -35%, 50%);
+        background-color: #fff;
+        transform: translateY(-50%);
+      }
+    }
+  }
+}
+
+.last_footer_sec {
+  .footer_info_wrap {
+    @include settingAbsoluteLeftPosition(10%, 50%);
+    transform: translateY(-50%);
+
+    .footer_info_list {
+      overflow: hidden;
+      margin-bottom: 10px;
+      font-size: 1.1rem;
+
+      dt {
+        float: left;
+        margin-right: 4px;
+        color: #6b6b6b;
+      }
+    }
+  }
+
+  .scroll_top {
+    @include settingAbsoluteRightPosition(10%, 50%);
+    transform: translateY(-50%);
+
+    .scroll_top_link {
+      color: #6e6c44;
+      font-weight: 600;
+      font-size: 1.6rem;
+      padding-bottom: 20px;
+      box-sizing: border-box;
+      position: $rel;
+
+      @include keyframe(footerScrollAnim) {
+        0% {
+          transform: translateX(300%);
+        }
+
+        100% {
+          transform: translateX(0);
+        }
+      }
+
+      &::before {
+        @include makeAfter(100%, 3px, 0, 80%);
+        background-color: #a7a7a7;
+      }
+
+      &::after {
+        @include makeAfter(25%, 3px, 0, 80%);
+        background-color: #6e6c44;
+        @include animation(0s, 1.5s, footerScrollAnim, infinite);
+      }
+    }
+
+  }
+
+}
+
+@media all and (min-width: 321px) and (max-width: 767px) {
+  .container {
+    width: $wrapSize;
+    display: block;
+    overflow-y: scroll;
+  }
+
+  .section_ {
+    height: auto;
+  }
+
+  .first_visual_sec.section_ {
+    height: 100%;
+  }
+
+  .product_info_sec.section_ {
+    height: 100%;
+
+    .product_info_half1 {
+      @include settingbasicWrapVal(50%, $wrapSize);
+      background-position: 10% 80%;
+      background-size: 120px 100px;
+
+      .product_info_title {
+        top: 20%;
+      }
+
+      .product_control_wrap {
+        top:30%;
+      }
+
+      .product_count_wrap {
+        top: 35%;
+      }
+    }
+
+    .product_list_wrap {
+      top: 65%;
+      width: 80%;
+
+      .product_list {
+        width: 2000px;
+        position: $ab;
+
+        & > li {
+          width: 180px;
+          height: 180px;
+
+          & > a {
+            & > span {
+              bottom: 5%;
+            }
+          }
+        }
+      }
+
+    }
+  }
+
+  .eco_management_sec {
+    padding: 5vh 0; 
+    .eco_management_title {
+      margin-top: 40px;
+      margin-bottom: 20px;
+    }
+
+    .eco_cycle_content_all_wrap {
+      .eco_cycle_content_wrap {
+        @include settingbasicWrapVal(100%, 410px);
+        display: block;
+        margin-right: 2%;
+        padding: 30px 2%;
+
+        .eco_cycle_list {
+          & > li {
+            float: left;
+            width: 46%;
+            padding-top: 70px;
+
+            margin: {
+              right: 2%;
+              top: 1%;
+            }
+
+            box-sizing: border-box;
+            position:$rel;
+
+            & > ul {
+              margin-top: 10px;
+            }
+          }
+        }
+      }
+
+      .eco_cycle_more_wrap {
+        @include settingbasicWrapVal(100%, 120px);
+        display: block;
+        margin: 20px 0 40px 0;
+
+        & > div {
+          float: left;
+          width: 49%;
+          height: 100%;
+
+          &:nth-child(1) {
+            margin: {
+              bottom: 0;
+              right: 2%;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .eco_certificate_sec {
+    padding: 3vh 0; 
+    .eco_certificate_title {
+      margin-top: 40px;
+      margin-bottom: 20px;
+    }
+
+    .eco_certificate_list {
+      margin-bottom: 40px;
+
+      & > li {
+        float: left;
+        width: 49%;
+        height: 200px;
+        border-radius: 10px;
+
+        margin: {
+          right: 0;
+          bottom: 2%;
+        }
+
+        margin-right:0;
+        text-indent: -9999rem;
+
+        &:nth-child(1),
+        &:nth-child(3),
+        &:nth-child(5) {
+          margin-right: 2%;
+        }
+
+        &:nth-child(5) {
+          margin-bottom: 0;
+        }
+
+      }
+    }
+  }
+
+
+  .about_sec.section_ {
+    height: 100vh;
+
+    .about_sec_bg1 {
+      display: block;
+      @include settingbasicWrapVal(100%, 33.333%, $rel);
+      background: url(../images/about_bg1.jpg) no-repeat 0 0 / cover;
+    }
+
+    .about_sec_bg2 {
+      display: block;
+      @include settingbasicWrapVal(100%, 33.333%, $rel);
+      background: url(../images/about_bg2.jpg) no-repeat center center / cover;
+
+      .about_detail_view {
+        padding: 1%;
+        width: 20%;
+        position: $ab;
+        bottom: 10%;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 0.9rem;
+      }
+    }
+
+    .about_sec_bg3 {
+      display: block;
+      @include settingbasicWrapVal(100%, 33.333%, $rel);
+    }
+
+    .eco_about_title {
+      color: #222;
+      font-size: 1.8rem;
+      @include settingAbsoluteLeftPosition(50%, 50%);
+      transform: translate(-50%, -50%);
+    }
+
+    .each_about_content_wrap1 {
+      @include settingAbsoluteLeftPosition(80px, 15%);
+
+      .about_content_text {
+        &:after {
+          @include makeAfter(100px, 1px, 180px, 50%);
+        }
+      }
+    }
+
+    .each_about_content_wrap2 {
+      @include settingAbsoluteRightPosition(50px, 83%);
+
+      .about_content_text {
+        &:after {
+          @include makeAfter(30%, 1px, -45%, 50%);
+        }
+      }
+    }
+  }
+
+  .last_footer_sec.section_ {
+    height: 100vh;
+
+    .footer_info_wrap {
+      @include settingAbsoluteLeftPosition(10%, 50%);
+    }
+
+    .scroll_top {
+      @include settingAbsoluteRightPosition(10%, 15%);
+
+      .scroll_top_link {
+        color: #6e6c44;
+        font-weight: 600;
+        font-size: 1.6rem;
+        padding-bottom: 0;
+        padding-left: 20px;
+        box-sizing: border-box;
+        position: $rel;
+
+        @include keyframe(footerMScrollAnim) {
+          0% {
+            transform: translateY(250%);
+          }
+
+          100% {
+            transform: translateY(0%);
+          }
+        }
+
+        &::before {
+          @include makeAfter(3px, 80%, 10px, 10%);
+          background-color: #a7a7a7;
+        }
+
+        &::after {
+          @include makeAfter(3px, 25%, 10px, 10%);
+          background-color: #6e6c44;
+          @include animation(0s, 1.5s, footerMScrollAnim, infinite);
+        }
+      }
+    }
+  }
+}

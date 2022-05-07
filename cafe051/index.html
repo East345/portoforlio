@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, minimum-scale=1, maximum-scale=1">
+  <meta property="og:url" content="http://east345.dothome.co.kr/cafe051/index.html">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Cafe051 Mobile">
+  <meta property="og:image" content="images/header_logo.png">
+  <meta property="og:description" content="Cafe051 Mobile버전 사이트입니다.">
+  <title>Cafe051 Mobile</title>
+  <link rel="icon" href="images/header_logo.ico">
+  <link rel="apple-touch-icon" href="images/header_logo.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+</head>
+<body>
+  <div class="wrapper">
+    <header class="header_"><!-- 100% -->
+      <div class="header_nav_toggle_btn">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <nav class="header_nav">
+        <div class="nav_wrap">
+          <div class="client_name_wrap clearfix">
+            <a href="#" class="client_page_link"><span class="client_name">east</span>님</a>
+            <div class="nav_close">메뉴창 닫기</div>
+          </div>
+          <div class="stamp_coupon_wrap">
+            <a href="" class="stamp_link">
+              <div>
+                스탬프
+                <div class="sc_count"><span>0</span>/10개</div>
+              </div>
+            </a>
+            <a href="" class="coupon_link">
+              <div>
+                쿠폰
+                <div class="sc_count">0개</div>
+              </div>
+            </a>
+          </div>
+          <ul class="nav_list">
+            <li class="nav_rel_menu_wrap">
+              <ul class="nav_menu_list">
+                <li><a href="#">기프트샵</a></li>
+                <li><a href="#">금액권</a></li>
+                <li><a href="#">스마트오더</a></li>
+              </ul>
+            </li>
+            <li class="nav_rel_menu_wrap">
+              <ul class="nav_menu_list">
+                <li><a href="#">이벤트</a></li>
+                <li><a href="#">매장찾기</a></li>
+                <li><a href="#">전자영수증</a></li>
+              </ul>
+            </li>
+            <li class="nav_rel_menu_wrap">
+              <ul class="nav_menu_list">
+                <li><a href="#">공지사항</a></li>
+                <li><a href="#">이용안내</a></li>
+                <li><a href="#">자주하는질문</a></li>
+              </ul>
+            </li>
+            <li class="nav_rel_menu_wrap">
+              <ul class="nav_menu_list">
+                <li><a href="#">마이페이지</a></li>
+                <li><a href="#">설정</a></li>
+              </ul>
+            </li>
+          </ul>
+          <div class="nav_sns_link_wrap">
+            <a href="#">cafe051페이스북</a>
+            <a href="#">cafe051인스타</a>
+          </div>
+        </div>
+      </nav>
+      <h1 class="logo_">
+        <a href="#" class="logo_link">
+          <img class="logo_img" src="images/header_logo.png" alt="cafe051로고" style="width: 120px; height: 40px;">
+        </a>
+      </h1>
+      <button class="alert_btn" type="button">알림</button>
+      <div class="alert_wrap">
+        <div class="alert_top clearfix">
+          알림
+          <div class="alert_close">알림창 닫기</div><!-- before, after로 x표시 -->
+        </div>
+        <div class="alert_content">
+          새로운 알림이 없습니다.
+        </div>
+      </div>
+    </header>
+    
+
+    <div class="container">
+      <section class="visual_sec swiper swiper1">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="images/slider_img1.jpg" alt="봄, 그리고 자몽 캐모마일 자몽 릴렉싱티, 허니 자몽블랙티">
+          </div>
+          <div class="swiper-slide">
+            <img src="images/slider_img2.png" alt="낮에도 밤에도 깔끔하게 콜드브루 콜드브루 아메리카노, 콜드브루라떼, 아이스볼 라떼, 콜드브루 연유라떼, 콜드브루 바닐라 라떼">
+          </div>
+          <div class="swiper-slide">
+            <img src="images/slider_img3.png" alt="델리 베이커리 5종 마늘바게트, 갈릭앤치즈 브레드, 잠봉뵈르, 맥앤치즈바게트, 맥앤치즈번">
+          </div>
+          <div class="swiper-slide">
+            <img src="images/slider_img4.jpg" alt="크로플 타임 트리플치즈, 플레인, 카야, 생크림, 아이스크림 크로플">
+          </div>
+          <div class="swiper-slide">
+            <img src="images/slider_img5.jpg" alt="오늘은 차 한잔 하실래요? 생강차, 상화라떼, 쌍화차, 감귤오미자차">
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </section>
+
+      <section class="section_wrap pay_sec">
+        <div class="pay_top">
+          <span class="pay_client_name">
+            <span>east</span>님
+          </span>
+          <span class="bar_code">결제바코드</span>
+        </div>
+        <ul class="pay_sort_list">
+          <li>
+            <a href="" class="pay_stamp_link">스탬프</a>
+          </li>
+          <li>
+            <a href="" class="pay_coupon_link">쿠폰</a>
+          </li>
+          <li>
+            <a href="" class="pay_exchange_card_link">교환권</a>
+          </li>
+          <li>
+            <a href="" class="pay_e_card_link">금액권</a>
+          </li>
+        </ul>
+
+      </section>
+      <section class="section_wrap week_sec">
+        <h3 class="section_title week_menu_title">
+          <a class="week_menu_link" href="#">금주의 추천메뉴</a>
+        </h3>
+        <div class="week_menu_wrap touchFlow">
+          <ul class="week_menu_list">
+            <li>
+              <a href="javascript:void(0)">
+                <img src="images/week_menu_img1.jpg" alt="연유라떼">
+                <span class="week_each_menu_name">연유라떼</span>
+                <span class="week_each_menu_price">4,000원</span>
+              </a>
+            </li>
+            <li>
+              <a href="javascript:void(0)">
+                <img src="images/week_menu_img2.jpg" alt="자몽에이드">
+                <span class="week_each_menu_name">자몽에이드</span>
+                <span class="week_each_menu_price">4,400원</span>
+              </a>
+            </li>
+            <li>
+              <a href="javascript:void(0)">
+                <img src="images/week_menu_img3.jpg" alt="그린티프라페">
+                <span class="week_each_menu_name">그린티프라페</span>
+                <span class="week_each_menu_price">5,000원</span>
+              </a>
+            </li>
+            <li>
+              <a href="javascript:void(0)">
+                <img src="images/week_menu_img4.jpg" alt="콜드브루">
+                <span class="week_each_menu_name">콜드브루</span>
+                <span class="week_each_menu_price">4,000원</span>
+              </a>
+            </li>
+            <li>
+              <a href="javascript:void(0)">
+                <img src="images/week_menu_img5.jpg" alt="딸기요거트스무디">
+                <span class="week_each_menu_name">딸기요거트스무디</span>
+                <span class="week_each_menu_price">5,000원</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="section_wrap menu_sec">
+        <h3 class="section_title cafe_menu_title">
+          <a class="cafe_menu_link" href="#">cafe 051 메뉴판</a>
+        </h3>
+        <ul class="cafe_menu_list">
+          <li>
+            <a href="#" class="best_menu">
+              <span>
+                BEST
+              </span>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="set_menu">
+              <span>
+                세트메뉴
+              </span>
+            </a>
+          </li>
+          <li>
+            <a href="" class="coffee_menu">
+              <span>
+                커피
+              </span>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="ade_menu">
+              <span>
+                에이드
+              </span>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="smoothie_menu">
+              <span>
+                스무디
+              </span>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="desert_menu">
+              <span>
+                디저트
+              </span>
+            </a>
+          </li>
+        </ul>
+      </section>
+      <section class="section_wrap etc_sec">
+        <ul class="etc_menu_list">
+          <li>
+            <a href="#" class="gift_menu">
+              <span>기프트</span>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="smart_menu">
+              <span>스마트오더</span>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="event_menu">
+              <span>이벤트</span>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="delivery_menu">
+              <span>배달오더</span>
+            </a>
+          </li>
+        </ul>
+      </section>
+      <section class="section_wrap location_sec">
+        <h3 class="section_title store_location_text">SEARCH STORE</h3>
+        <form class="location_search_wrap" action="#" method="post">
+          <input type="text" placeholder="원하시는 지역의 매장을 검색해보세요!">
+          <input class="location_search_btn" type="submit" value="검색" >
+        </form>
+      </section>
+      <section class="section_wrap news_sec">
+        <div class="news_wrap">
+          <span class="news_title">소식</span>
+          <div class="swiper swiper2">
+            <ul class="news_list swiper-wrapper">
+              <li class="swiper-slide">
+                <a href="">[이벤트] '칭찬해주세요' 4월 이벤트 당첨자 발표</a>
+              </li>
+              <li class="swiper-slide">
+                <a href="">[공지사항] 051 SNS 서포터즈 2기 모집</a>
+              </li>
+              <li class="swiper-slide">
+                <a href="">[이벤트] 신메뉴 이름 맞히기 이벤트</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section class="section_wrap sns_sec">
+        <div class="section_title sns_title">cafe 051's SNS</div>
+        <div class="sns_tag_wrap">
+          <span>#051</span>
+          <span>#051신메뉴</span>
+          <span>#051이벤트</span>
+        </div>
+        <div class="sns_link_wrap">
+          <a href="" class="fb_link">페이스북</a>
+          <a href="" class="insta_link">인스타그램</a>
+        </div>
+      </section>
+
+      <footer class="footer_">
+        <small>Copyright 2022 CAFE051. All Rights Reserved.</small>
+      </footer>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+  <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+  <script src="js/jquery.touchFlow.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

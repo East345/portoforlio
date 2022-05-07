@@ -1,0 +1,109 @@
+
+/* 푸터 */
+.footer_group {
+  width: 100%;
+  min-width: 1240px;
+  position: relative;
+  background: #414040;
+}
+.footer_group .footer_wrap {
+  width: 1240px;
+  margin: 0 auto;
+  padding: 30px 0;
+  position: relative;
+}
+
+.footer_wrap .footer_info .footer_menu li a {
+  float: left;
+  color: #fff;
+  margin: 0px 20px 20px 0px;
+  font-size: 14px;
+  text-decoration: none;
+}
+.footer_info .footer_menu .personal_info {
+  position: relative;
+}
+.footer_info .footer_menu .personal_info:after {
+  content: '';
+  width: 2px;
+  height: 14px;
+  position: absolute;
+  top: 5px;
+  right: -12px;
+  background: #fff;
+  cursor: auto;
+}
+.footer_wrap .footer_info .add {
+  color: #fff;
+  font-size: 13px;
+  margin-bottom: 10px;
+}
+.footer_wrap .footer_info .copy {
+  color: #fff;
+  font-size: 12px;
+}
+.footer_wrap .asidegroup {
+  position: relative;
+}
+
+.asidegroup .group .sns_group a {
+  color: rgb(236, 236, 236);
+  font-size: 18px;
+  padding-right: 15px;
+  box-sizing: border-box;
+}
+
+.group .link_group .relate_site_btn {
+  display: block;
+  font-size: 14px;
+  width: 200px;
+  height: 25px;
+  margin-left: 20px;
+  box-sizing: border-box;
+  border: 1px solid rgb(236, 236, 236);
+  position: relative;
+  color: rgb(236, 236, 236);
+  text-decoration: none;
+}
+.group .link_group .relate_site {
+  position: absolute;
+  top: 0;
+  left: 5px;
+}
+.group .link_group .relate_site_btn > i {
+  position: absolute;
+  top: 4px;
+  right: 5px;
+}
+.group .link_group .site_menu {
+  font-size: 14px;
+  color: rgb(236, 236, 236);
+  background: #414040;
+  width: 200px;
+  height: 300px;
+  margin-left: 20px;
+  overflow-y: scroll;
+  position: absolute;
+  top: -300px;
+  border: 1px solid #fff;
+  box-sizing: border-box;
+}
+.group .link_group .site_menu dt {
+  background: #222;
+  padding: 10px 8px;
+  font-weight: 500;
+}
+.group .link_group .site_menu dd {
+  padding: 10px 15px;
+}
+.group .link_group .site_menu dd a {
+  color: rgb(236, 236, 236);
+}
+.group .link_group .off {
+  display: none;
+}
+.asidegroup .mark {
+  position: absolute;
+  top: 50px;
+  right: 0;
+}

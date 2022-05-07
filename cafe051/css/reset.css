@@ -1,0 +1,48 @@
+@charset "utf-8";
+
+header, body, footer, aside, article, section, nav, form,  ul, li, ol, dl, dt, dd, input, img, div, span, a, p, strong, em, h1, h2, h3, button{
+  margin:0; 
+  padding:0; 
+} 
+header, main, footer, aside, article, section, nav{
+  display:block;
+}
+
+html{
+  overflow-x: hidden;
+}
+body{
+  background-color: #222;
+}
+body, input, select{
+  font-size: 12px;
+  color: #222;
+  font-family: 'Noto Sans KR', sans-serif;
+}
+ul, ol{
+  list-style:none;
+}
+em, address, i{
+  font-style: normal;
+}
+strong, b{
+  font-weight: 400;
+}
+img, fieldset{
+  border: 0 none;
+}
+img, input, select{
+  vertical-align: middle;
+}
+a:link, a:visited{
+  color:#222;
+  text-decoration: none;
+}
+a:hover, a:active, a:focus{
+  color: #222;
+  text-decoration: underline;
+}
+button {
+  border: none;
+  background: transparent;
+}

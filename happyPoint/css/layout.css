@@ -1,0 +1,912 @@
+@charset "utf-8";
+@import url(header.css);
+@import url(footer.css);
+
+#container{
+  width:100%;
+  min-width: 1080px;
+  position:relative;
+}
+
+/* box1 생활을 햅하게 */
+.box1_container{
+  width:100%;
+  min-width: 1080px;
+  position:relative;
+}
+.box1_container .box1_inner{
+  width:1080px;
+  margin: 120px auto 0 auto;
+}
+.box1_inner .page_location_wrap{
+  margin:20px 0 0 0;
+}
+.page_location_wrap > ol{
+  overflow: hidden;
+}
+.page_location_wrap > ol > li{
+  float:left;
+  padding-right:30px;
+  position: relative;
+}
+.page_location_wrap > ol > li::after{
+  content:'';
+  width:12px;
+  height:12px;
+  background: url(../images/icon-arrow.png) no-repeat 0 0;
+  position:absolute;
+  top:3px;
+  right:8px;
+}
+.page_location_wrap > ol > li:last-child::after{
+  content:none;
+}
+.title_text{
+  margin:30px 0 20px 0;
+  font-size:30px;
+  font-weight: 400;
+}
+.title_text .bold_text{
+  display: block;
+  font-weight: 600;
+}
+.detail_text{
+  font-size: 14px;
+}
+
+.box1_inner .box1_img_wrap{
+  background: url(../images/phone_basic_view.png) no-repeat center;
+  width: 419px;
+  height: 542px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.box1_icon_wrap .box1_icon > img{
+  width:200px;
+  height:200px;
+}
+.box1_icon_wrap .box1_icon{
+  display:inline-block;
+  opacity: 0;
+  cursor: pointer;
+  user-select: none;
+  display:none;
+}
+.box1_icon_wrap.show .box1_icon{
+  animation:box1_ani1 0.3s ease forwards;
+}
+.box1_icon_wrap .box1_icon1{
+  position: absolute;
+  bottom:0px;
+  left:-300px;
+}
+.box1_icon_wrap.show .box1_icon1{
+  animation-delay: 0s;
+}
+.box1_icon_wrap .box1_icon2{
+  position: absolute;
+  bottom:180px;
+  left:-150px;
+}
+.box1_icon_wrap.show .box1_icon2{
+  animation-delay: 0.5s;
+}
+.box1_icon_wrap .box1_icon3{
+  position: absolute;
+  bottom:200px;
+  right:-150px;
+  width:180px;
+  height:180px;
+}
+.box1_icon_wrap.show .box1_icon3{
+  animation-delay: 1s;
+}
+.box1_icon_wrap .box1_icon4{
+  position: absolute;
+  bottom:0px;
+  right:-320px;
+}
+.box1_icon_wrap.show .box1_icon4{
+  animation-delay: 1.5s;
+}
+@keyframes box1_ani1 {
+  0%{opacity: 0;}
+  30%{opacity: 0.3;}
+  70%{opacity: 0.7;}
+  100%{opacity:1;}
+}
+.box1_icon_wrap .icon_hover_text{
+  background-color: #fff;
+  border-radius: 10px;
+  position: absolute;
+  top:180px;
+  left:120px;
+  width:250px;
+  height:150px;
+  padding:20px;
+  box-sizing: border-box;
+  box-shadow: 10px 10px 5px rgba(65, 65, 65, 0.2);
+  opacity: 0; 
+  user-select: none;
+}
+.icon_hover_text .icon_hover_text_tit{
+  font-weight: 600;
+  font-size:20px;
+  margin-bottom:20px;
+}
+.icon_hover_text .icon_hover_text_tit1{
+  color:#ec5370;
+}
+.icon_hover_text .icon_hover_text_tit2{
+  color:#fbc700;
+}
+.icon_hover_text .icon_hover_text_tit3{
+  color:#57e5a4;
+}
+.icon_hover_text .icon_hover_text_tit4{
+  color:#4085ed;
+}
+
+.icon_hover_text .icon_hover_text_detail{
+  font-size:14px;
+  text-align: left;
+}
+
+/* box2 해피포인트 */
+.box2_container{
+  width:100%;
+  min-width: 1080px;
+  position:relative;
+  background-color: #fafafa;
+  padding:50px 0 0 0;
+}
+.box2_container .box2_inner{
+  width:1080px;
+  margin: 0 auto;
+  position: relative;
+}
+.box2_container .box2_text_wrap{
+  position: relative;
+  z-index: 10;
+}
+.box2_inner .point_brand_wrap{
+  width:800px;
+  margin:0 auto;
+  position: relative;
+}
+
+.point_brand_wrap > ul > li{
+  background: url(../images/point_icons.png) no-repeat ;
+  width:100px;
+  height:100px;
+  float: left;
+  margin:0 10px;
+}
+.point_brand_wrap .point_icon1{
+  background-position: 0 -200px;
+}
+.point_brand_wrap .point_icon2{
+  background-position: 0 0;
+}
+.point_brand_wrap .point_icon3{
+  background-position: 0 -100px;
+}
+.point_brand_wrap .point_icon4{
+  background-position: 0 -300px;
+  
+}
+.point_brand_wrap > ul:first-child{
+  position: absolute;
+  left:0;
+  top:300px;
+}
+.point_brand_wrap.ani > ul:first-child{
+  animation:pointBrandLeftAni 2s ease forwards;
+}
+
+.point_brand_wrap > ul:last-child{
+  position: absolute;
+  right:0px;
+  top:300px;
+}
+.point_brand_wrap.ani > ul:last-child{
+  animation:pointBrandRightAni 3.7s ease forwards;
+}
+@keyframes pointBrandLeftAni{
+  0%{transform:translateX(0)}
+  50%{transform:translateX(140px)}
+  100%{transform:translateX(280px)}
+}
+@keyframes pointBrandRightAni{
+  0%{transform:translateX(0)}
+  50%{transform:translateX(-140px)}
+  100%{transform:translateX(-280px)}
+}
+.box2_inner .phone_img{
+  background: url(../images/phone_blank_view.png) no-repeat center;
+  margin: 0 auto;
+  width: 419px;
+  height: 542px;
+  z-index:1;
+  position:relative;
+}
+.box2_inner .box2_img_wrap{
+  margin: 0 auto;
+  width:600px;
+  position: relative;
+}
+
+.box2_img_wrap .point_stack_view_wrap{
+  position: absolute;
+  top:100px;
+  left:50%;
+  transform: translateX(-50%);
+  z-index:2;
+}
+.point_stack_view_wrap .h_point_text{
+  font-weight: 500;
+}
+.point_stack_view_wrap > div{
+  width:150px;
+  height:60px;
+  line-height: 60px;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: 600;
+  color:#fff;
+  position: absolute;
+  opacity: 0;
+  transition: opacity 1s ease;
+}
+.point_stack_view_wrap .point_stack1{
+  left:-20px;
+  top:120px;
+  background-color: #4085ed;
+}
+.point_stack_view_wrap .point_stack2{
+  right:-20px;
+  top:180px;
+  background-color: #57e5a4;
+}
+.point_stack_view_wrap .point_stack3{
+  left:-20px;
+  top:240px;
+  background-color: #fbc700;
+}
+.point_stack_view_wrap .point_stack4{
+  right:-20px;
+  top:300px;
+  background-color: #ec5370;
+}
+
+.box2_img_wrap .point_coin_wrap{
+  position:absolute;
+  opacity:0;
+}
+.box2_img_wrap .point_coin_wrap.show{
+  position:absolute;
+  opacity:1;
+  transition: opacity 1s ease;
+  transition-delay: 2.5s;
+}
+
+.point_coin_wrap > div{
+  background: url(../images/point_coins.png) no-repeat 0 0;
+  position:absolute;
+  z-index: 10;
+}
+.point_coin_wrap > div:nth-child(1){
+  background-position: 0 0;
+  width: 55px;
+  height:42px;
+  left:550px;
+  top:200px;
+}
+.point_coin_wrap.show > div:nth-child(1){
+  animation: coin1Ani 1.5s ease forwards;
+  animation-delay: 3s;
+}
+@keyframes coin1Ani{
+  30%{transform: translate(-10px, -10px) rotateY(20deg) rotateX(190deg);}
+  50%{transform: translate(0, 0px) rotateY(40deg) rotateX(960deg);}
+  80%{transform: translate(-10px,-10px) rotateY(270deg) rotateX(130deg);} 
+  100%{transform: translate(-20px,-10px) rotateY(0deg) rotateX(0deg);} 
+}
+.point_coin_wrap > div:nth-child(2){
+  background-position: -55px -42px;
+  width: 78px;
+  height:62px;
+  left:450px;
+  top:10px;
+}
+.point_coin_wrap.show > div:nth-child(2){
+  animation: coin2Ani 1.5s ease forwards;
+  animation-delay: 3s;
+}
+@keyframes coin2Ani{
+  30%{transform: translate(-10px, -10px) rotateY(20deg) rotateX(190deg);}
+  50%{transform: translate(0, 0px) rotateY(40deg) rotateX(660deg);}
+  80%{transform: translate(10px,10px) rotateY(230deg) rotateX(200deg);} 
+  100%{transform: translate(20px,10px) rotateZ(-30deg) rotateY(0deg) rotateX(0deg);} 
+}
+.point_coin_wrap > div:nth-child(3){
+  background-position: -132px -104px;
+  width: 70px;
+  height:72px;
+  left:90px;
+  top:20px;
+}
+.point_coin_wrap.show > div:nth-child(3){
+  animation: coin3Ani 1.5s ease forwards;
+  animation-delay: 3s;
+}
+@keyframes coin3Ani{
+  30%{transform: translate(-10px, -10px) rotateY(20deg) rotateX(190deg);}
+  50%{transform: translate(0, 0px) rotateY(40deg) rotateX(960deg);}
+  80%{transform: translate(-10px,-10px) rotateY(270deg) rotateX(130deg);} 
+  100%{transform: translate(-20px,-10px) rotateY(0deg) rotateX(0deg);} 
+}
+.point_coin_wrap > div:nth-child(4){
+  background-position: -132px 0px;
+  width: 55px;
+  height:42px;
+  left:250px;
+  top:20px;
+}
+
+.point_coin_wrap.show > div:nth-child(4){
+  animation: coin4Ani 1.5s ease forwards;
+  animation-delay: 3s;
+}
+@keyframes coin4Ani{
+  30%{transform: translate(-10px, -10px) rotateY(60deg) rotateX(90deg);}
+  50%{transform: translate(0, 0px) rotateY(180deg) rotateX(160deg);}
+  100%{transform: translate(-10px,-10px) rotateY(760deg) rotateX(0deg);} 
+}
+.point_coin_wrap > div:nth-child(5){
+  background-position: -201px -262px;
+  width: 83px;
+  height:87px;
+  left:0px;
+  top:180px;
+}
+.point_coin_wrap.show > div:nth-child(5){
+  animation: coin5Ani 1.5s ease forwards;
+  animation-delay: 3s;
+}
+@keyframes coin5Ani{
+  30%{transform: translate(0, -10px) rotateY(1160deg) rotateX(1160deg);}
+  50%{transform: translate(0, 0px) rotateY(160deg) rotateX(160deg);}
+  100%{transform: translate(0,10px) rotateY(60deg) rotateX(0deg);} 
+}
+.box2_img_wrap .point_bling_deco{
+  background: url(../images/point_bling.png) no-repeat 0 0;
+  width:830px;
+  height:830px;
+  position:absolute;
+  top:-180px;
+  left:-120px;
+  z-index: 5;
+  opacity: 0;
+  transition:opacity 0.5s ease-in-out;
+  transition-delay: 2.2s;
+}
+/* box3 해피포인트로 적립 */
+.box3_container{
+  width: 100%;
+  min-width: 1080px;
+  position: relative;
+  padding:50px 0 0 0;
+}
+.box3_container .box3_inner{
+  width: 1080px;
+  margin: 0 auto;
+  position: relative;
+}
+.box3_inner .box3_img_wrap{
+  width:419px;
+  height:542px;
+  background: url(../images/phone_blank_view.png) no-repeat 0 0;
+  margin:0 auto;
+  position: relative;
+  z-index: 3;
+}
+.box3_img_wrap .point_use_wrap{
+  background-color: #ebebeb;
+  width: 260px;
+  height:455px;
+  border-radius: 20px 20px 0 0;
+  position: absolute;
+  top:88px;
+  left:80px;
+  padding:20px 10px;
+  box-sizing: border-box;
+}
+.point_use_wrap .point_use_text{
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+.point_use_list > li{
+  width: 240px;
+  height:40px;
+  line-height: 40px;
+  background-color: #fff;
+  margin-bottom: 10px;
+  overflow: hidden;
+  border-radius: 5px;
+  padding:0 10px;
+  box-sizing: border-box;
+  position: relative;
+  opacity: 0;
+}
+.point_use_list.show > li{
+  animation:usePlaceAni 0.3s ease forwards;
+}
+.point_use_list.show > li:nth-child(1){
+  animation-delay: 0s;
+}
+.point_use_list.show > li:nth-child(2){
+  animation-delay: 0.2s;
+}
+.point_use_list.show > li:nth-child(3){
+  animation-delay: 0.3s;
+}
+.point_use_list.show > li:nth-child(4){
+  animation-delay: 0.4s;
+}
+.point_use_list.show > li:nth-child(5){
+  animation-delay: 0.5s;
+}
+.point_use_list.show > li:nth-child(6){
+  animation-delay: 0.6s;
+}
+.point_use_list.show > li:nth-child(7){
+  animation-delay: 0.7s;
+}
+.point_use_list.show > li:nth-child(8){
+  animation-delay: 0.8s;
+}
+@keyframes usePlaceAni{
+  0%{transform: translateX(-150px); opacity: 0;}
+  30%{transform: translateX(-110px); opacity: 0.2;}
+  60%{transform: translateX(-80px); opacity: 0.5;}
+  80%{transform: translateX(-40px); opacity: 0.8;}
+  100%{transform: translateX(0); opacity: 1;}
+}
+
+.point_use_list > li > span::before{
+  content:'';
+  width:30px;
+  height:30px;
+  position: absolute;
+  top:5px;
+  left:15px;
+  border: 1px solid #d9d9d9;
+  border-radius: 50%;
+  background: url(../images/use_place_logo_s.png) no-repeat 0 0;
+  color:#333;
+}
+.point_use_list > li .baskin::before{
+  background-position: 0 -180px;
+}
+.point_use_list > li .paris::before{
+  background-position: 0 -450px;
+}
+.point_use_list > li .latelier::before{
+  background-position: 0 -300px;
+}
+.point_use_list > li .burger::before{
+  background-position: 0 -90px;
+}
+.point_use_list > li .passcuzzi::before{
+  background-position: 0 -120px;
+}
+.point_use_list > li .burger::before{
+  background-position: 0 -150px;
+}
+.point_use_list > li .bizen::before{
+  background-position: 0 -210px;
+}
+.point_use_list > li .jamba::before{
+  background-position: 0 -390px;
+}
+.point_use_list > li .dunkin::before{
+  background-position: 0 -330px;
+}
+.point_use_list > li > span{
+  float: left;
+  margin-left:45px;
+}
+.point_use_list > li > div{
+  float:right;
+  margin-top: 15px;
+}
+.point_use_list > li > div > div{
+  float:left;
+  background: url(../images/point_use_detail_s.png) no-repeat;
+  text-indent: -9999em;
+  width:15px;
+  height:15px;
+  margin-right:5px;
+}
+.point_use_list > li > div .use_sort_life{
+  background-position: 0 -15px;
+}
+.point_use_list > li > div .use_sort_shopping{
+  background-position: 0 -60px;
+}
+.point_use_list > li > div .use_sort_moive{
+  background-position: 0 -30px;
+}
+.point_use_list > li > div .use_point_revert{
+  background-position: 0 -45px;
+}
+.point_use_list > li > div .use_point_card{
+  background-position: 0 0;
+}
+
+
+
+
+.point_use_circle_deco .point_use_circle_deco_S{
+  width:620px;
+  height:310px;;
+  border: 1px solid #d9d9d9;
+  border-top-left-radius: 310px;
+  border-top-right-radius: 310px;
+  border-bottom:none;
+  position:absolute;
+  bottom:0;
+  left:50%;
+  transform:translateX(-50%);
+  opacity: 0;
+}
+.point_use_circle_deco.show .point_use_circle_deco_S{
+  animation: pointUseCircleAni 0.3s linear;
+  opacity: 1;
+}
+.point_use_circle_deco .point_use_circle_deco_M{
+  width:830px;
+  height:415px;
+  border: 1px solid #d9d9d9;
+  border-top-left-radius: 415px;
+  border-top-right-radius: 415px;
+  border-bottom:none;
+  position:absolute;
+  bottom:0px;
+  left:50%;
+  transform:translateX(-50%);
+  opacity: 0;
+}
+.point_use_circle_deco.show .point_use_circle_deco_M{
+  animation: pointUseCircleAni 0.4s linear;
+  opacity: 1;
+}
+.point_use_circle_deco .point_use_circle_deco_L{
+  width:1040px;
+  height:520px;
+  border: 1px solid #d9d9d9;
+  border-top-left-radius: 520px;
+  border-top-right-radius: 520px;
+  border-bottom:none;
+  position:absolute;
+  bottom:0px;
+  left:50%;
+  transform:translateX(-50%);
+  opacity: 0;
+}
+.point_use_circle_deco.show .point_use_circle_deco_L{
+  animation: pointUseCircleAni 0.5s linear;
+  opacity: 1;
+}
+@keyframes pointUseCircleAni{
+  /* from{
+    transform: rotate(-135deg);
+  }
+  to{
+    transform: rotate(-45deg);
+  } */
+}
+
+.point_use_brand_logo > div > div {
+  width:100px;
+  height:100px;
+  background: url(../images/use_place_logo_100.png) no-repeat;
+  border-radius: 50%;
+  border:5px dotted #d9d9d9;
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+
+.point_use_brand_logo .point_use_logo_S1{
+  top:380px;
+  left:-130px;
+  background-position: 0 0;
+}
+
+.point_use_brand_logo.show .point_use_logo_S1{
+  animation: pointUseLogoAni 0.5s forwards;
+  animation-delay: 0.4s;
+}
+
+.point_use_brand_logo .point_use_logo_S2{
+  top:380px;
+  right:-130px;
+  background-position: 0 -100px;
+}
+.point_use_brand_logo.show .point_use_logo_S2{
+  animation: pointUseLogoAni 0.5s forwards;
+  animation-delay: 0.4s;
+}
+.point_use_brand_logo .point_use_logo_M1{
+  top:180px;
+  left:-120px;
+  background-position: 0 -200px;
+}
+.point_use_brand_logo.show .point_use_logo_M1{
+  animation: pointUseLogoAni 0.5s forwards;
+  animation-delay: 0.5s;
+}
+.point_use_brand_logo .point_use_logo_M2{
+  top:180px;
+  right:-120px;
+  background-position: 0 -300px;
+}
+.point_use_brand_logo.show .point_use_logo_M2{
+  animation: pointUseLogoAni 0.5s forwards;
+  animation-delay: 0.5s;
+}
+.point_use_brand_logo .point_use_logo_L1{
+  top:310px;
+  left:-330px;
+  background-position: 0 -400px;
+}
+.point_use_brand_logo.show .point_use_logo_L1{
+  animation: pointUseLogoAni 0.5s forwards;
+  animation-delay: 0.65s;
+}
+.point_use_brand_logo .point_use_logo_L2{
+  top:10px;
+  left:-50px;
+  background-position: 0 -500px;
+}
+.point_use_brand_logo.show .point_use_logo_L2{
+  animation: pointUseLogoAni 0.5s forwards;
+  animation-delay: 0.65s;
+}
+.point_use_brand_logo .point_use_logo_L3{
+  top:10px;
+  right:-50px;
+  background-position: 0 -600px;
+}
+.point_use_brand_logo.show .point_use_logo_L3{
+  animation: pointUseLogoAni 0.5s forwards;
+  animation-delay:0.65s;
+}
+.point_use_brand_logo .point_use_logo_L4{
+  top:310px;
+  right:-330px;
+  background-position: 0 -700px;
+}
+.point_use_brand_logo.show .point_use_logo_L4{
+  animation: pointUseLogoAni 0.5s forwards;
+  animation-delay: 0.65s;
+}
+@keyframes pointUseLogoAni{
+  0%{opacity: 0;}
+  50%{opacity: 0.5;}
+  100%{opacity: 1;}
+}
+/* box4 해피포인트 이벤트와 혜택 */
+.box4_container{
+  width:100%;
+  min-width: 1080px;
+  position:relative;
+  background-color: #fafafa;
+  padding:50px 0 0 0;
+}
+.box4_container .box4_inner{
+  width:1080px;
+  margin: 0 auto;
+  position: relative;
+}
+.box4_inner .box4_img_wrap{
+  width:419px;
+  height:542px;
+  background: url(../images/phone_blank_view.png) no-repeat 0 0;
+  margin:0 auto;
+  position: relative;
+  z-index: 3;
+}
+.box4_img_wrap .point_event_wrap{
+  width: 260px;
+  height:455px;
+  border-radius: 20px 20px 0 0;
+  position: absolute;
+  top:88px;
+  left:80px;
+  padding:40px 20px 10px 20px;
+  box-sizing: border-box;
+  opacity: 0;
+}
+
+.point_event_wrap .point_event_coin{
+  background: url(../images/point_stack_coin.png) no-repeat 0 0px;
+  width:200px;
+  height:288px;
+  background-size: cover;
+  margin-left:20px;
+}
+.point_event_wrap .point_event_amount{
+  font-size: 20px;
+  font-weight: 600;
+  color:#494949;
+  margin: 20px 0;
+}
+
+.point_event_icon_wrap{
+  position: relative;
+}
+.point_event_icon_wrap > div{
+  background:url(../images/event_icons.png) no-repeat;
+  width:160px;
+  height:160px;
+  position:absolute;
+  z-index: 10;
+  opacity:0;
+}
+.point_event_icon_wrap > div:nth-child(1){
+  bottom:80px;
+  left:80px;
+  background-position: 0 0;
+}
+.point_event_icon_wrap.show > div:nth-child(1){
+  animation: pointEventIconAni 0.5s linear forwards;
+  animation-delay: 0.8s;
+}
+.point_event_icon_wrap > div:nth-child(2){
+  bottom:275px;
+  left:180px;
+  background-position: -160px 0;
+}
+.point_event_icon_wrap.show > div:nth-child(2){
+  animation: pointEventIconAni 0.5s linear forwards;
+  animation-delay: 1.2s;
+}
+.point_event_icon_wrap > div:nth-child(3){
+  bottom:280px;
+  right:180px;
+  background-position: -320px 0;
+}
+.point_event_icon_wrap.show > div:nth-child(3){
+  animation: pointEventIconAni 0.5s linear forwards;
+  animation-delay: 1.2s;
+}
+.point_event_icon_wrap > div:nth-child(4){
+  bottom:80px;
+  right:80px;
+  background-position: -480px 0;
+}
+.point_event_icon_wrap.show > div:nth-child(4){
+  animation: pointEventIconAni 0.5s linear forwards;
+  animation-delay: 0.8s;
+}
+@keyframes pointEventIconAni{
+  0%{opacity: 0;}
+  50%{opacity: 0.5;}
+  100%{opacity: 1;}
+}
+.point_event_circle_deco .point_event_circle_deco_S{
+  width:620px;
+  height:310px;;
+  background-color: rgba(235, 235, 235, 0.7);
+  border-top-left-radius: 310px;
+  border-top-right-radius: 310px;
+  border-bottom:none;
+  position:absolute;
+  left:50%;
+  bottom:0;
+  opacity: 0;
+}
+.point_event_circle_deco.show .point_event_circle_deco_S{
+  animation: pointEventCircleAni 0.5s linear forwards;
+}
+.point_event_circle_deco .point_event_circle_deco_M{
+  width:830px;
+  height:415px;
+  background-color: rgba(235, 235, 235, 0.45);
+  border-top-left-radius: 415px;
+  border-top-right-radius: 415px;
+  border-bottom:none;
+  position:absolute;
+  left:50%;
+  bottom:0px;
+  opacity: 0;
+}
+.point_event_circle_deco.show .point_event_circle_deco_M{
+  animation: pointEventCircleAni 0.5s linear forwards;
+  animation-delay: 0.2s;
+}
+
+.point_event_circle_deco .point_event_circle_deco_L{
+  width:1040px;
+  height:520px;
+  background-color: rgba(235, 235, 235, 0.25);
+  border-top-left-radius: 520px;
+  border-top-right-radius: 520px;
+  border-bottom:none;
+  position:absolute;
+  left:50%;
+  bottom:0px;
+  opacity: 0;
+}
+.point_event_circle_deco.show .point_event_circle_deco_L{
+  animation: pointEventCircleAni 0.5s linear forwards;
+  animation-delay: 0.4s;
+}
+@keyframes pointEventCircleAni{
+  0%{transform: translateX(-50%) translateY(10%); opacity: 0;}
+  100%{transform:  translateX(-50%) translateY(0); opacity: 1;}
+}
+/* 오른쪽 위치 표시 nav  */
+.view_location_nav{
+  position:fixed;
+  top:50%;
+  right:20px;
+  transform: translateY(-50%);
+  z-index: 999;
+}
+.view_location_nav .section_link{
+  width:13px;
+  height:13px;
+  background-color: #9b9b9b;
+  border-radius: 50%;
+  display:inline-block;
+  text-indent: -9999rem;
+  position:relative;
+  margin-bottom: 15px;
+}
+.view_location_nav .section_link:after{
+  content:'';
+  width:17px;
+  height:17px;
+  border: 2px solid #9b9b9b;
+  border-radius: 50%;
+  position: absolute;
+  top:-4px;
+  left:-4px;
+}
+.view_location_nav li.on .section_link{
+  background-color: #0a0a80;
+}
+.view_location_nav li.on .section_link:after{
+  border: 2px solid #0a0a80;
+}
+
+.view_location_nav .section_link:nth-last-child():after{
+  content:'';
+  width:0;
+  height:0;
+}
+/* 앱 다운로드 */
+.app_download_wrap{
+  position: fixed;
+  bottom:0;
+  right:40px;
+  width:120px;
+  height:180px;
+  background-color: #0a0a80;
+  border-radius: 10px 10px 0 0;
+  padding:20px;
+  box-sizing: border-box;
+  z-index: 999;
+}
+.app_download_wrap .app_download_text{
+  color:#fff;
+  font-size: 16px;
+  margin-bottom: 10px;
+  text-align: center;
+}

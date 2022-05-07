@@ -1,0 +1,81 @@
+@charset "utf-8";
+
+@font-face {
+  font-family: 'Nanum';
+  font-weight: 400;
+  src: url('../font/NanumGothic.eot');
+  src: url('../font/NanumGothic.eot?#iefix') format('embedded-opentype'),
+    url('../font/NanumGothic.woff') format('woff'),
+    url('../font/NanumGothic.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'NanumBold';
+  font-weight: 600;
+  src: url('../font/NanumGothicBold.eot');
+  src: url('../font/NanumGothicBold.eot?#iefix') format('embedded-opentype'),
+    url('../font/NanumGothicBold.woff') format('woff'),
+    url('../font/NanumGothicBold.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'NanumEX';
+  font-weight: 900;
+  src: url('../font/NanumGothicExtraBold.eot');
+  src: url('../font/NanumGothicExtraBold.eot?#iefix')
+      format('embedded-opentype'),
+    url('../font/NanumGothicExtraBold.woff') format('woff'),
+    url('../font/NanumGothicExtraBold.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'ChungjungoneGodic';
+  font-weight: 400;
+  src: url('../font/chungjungone_GD_R.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'ChungjungoneGodicBold';
+  font-weight: 600;
+  src: url('../font/chungjungone_GD_B.ttf') format('truetype');
+}
+
+
+header, body, footer, aside, article, section, nav, form,  ul, li, ol, dl, dt, dd, input, img, div, span, a, p, del, strong, em, h1, h2, h3, button{
+  margin:0; 
+  padding:0; 
+} 
+header, main, footer, aside, article, section, nav{
+  display:block;
+}
+body, input, select{
+  font-size: 12px;
+  color: #222;
+  font-family: 'Nanum', '나눔고딕', '돋움', 'dotum', sans-serif;
+}
+ul, ol{
+  list-style:none;
+}
+em, address, i{
+  font-style: normal;
+}
+strong, b{
+  font-weight: 400;
+}
+img, fieldset{
+  border: 0 none;
+}
+img, input, select{
+  vertical-align: middle;
+}
+a:link, a:visited{
+  color:#222;
+  text-decoration: none;
+}
+a:hover, a:active, a:focus{
+  color: #222;
+  text-decoration: none;
+}
+button {
+  border: none;
+  background: transparent;
+}
+h2{
+  font-family: 'ChungjungoneGodicBold', 'Nanum', '나눔고딕', '돋움', 'dotum', sans-serif;
+}

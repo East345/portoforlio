@@ -1,0 +1,124 @@
+@charset "utf-8";
+/* footer */
+.footer_container{
+  width:100%;
+  min-width: 1080px;
+  position:relative;
+}
+.footer_container .footer_inner{
+  width:1080px;
+  position:relative;
+  margin: 0px auto;
+  font-size: 14px;
+  padding:30px 0;
+}
+.footer_inner .footer_top{
+  overflow: hidden;
+  vertical-align: middle;
+  border-bottom: 1px solid #d9d9d9;
+  padding-bottom:20px;
+}
+.footer_top .h_point_cs_info_wrap{
+  float:left;
+  padding-top:8px;
+}
+.h_point_cs_info_wrap dt{
+  display: inline-block;
+
+}
+.h_point_cs_info_wrap dd{
+  display: inline-block;
+  margin-left:8px;
+}
+.h_point_cs_info_wrap dd span{
+  margin-left:10px;
+  font-size: 12px;
+  color:#494949;
+}
+.footer_top .family_site_wrap{
+  float:right;
+}
+
+.family_site_wrap .family_site_select{
+  font-size: 14px;
+  padding:5px 10px;
+  margin-right: 5px;
+  border:1px solid #9b9b9b;
+  border-radius: 3px;
+  cursor: pointer;
+}
+.family_site_wrap input[type='submit']{
+  background-color: transparent;
+  border:1px solid #9b9b9b;
+  padding:5px 10px;
+  font-size: 14px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+.footer_inner .footer_info{
+  margin-top:20px;
+  position: relative;
+}
+.footer_info .footer_info_top{
+  margin-bottom: 10px;
+}
+
+.footer_info_top_list > li{
+  float:left;
+  position: relative;
+  margin-right: 18px;
+}
+.footer_info_top_list > li:after{
+  content:'';
+  width:2px;
+  height:14px;
+  background-color: #9b9b9b;
+  position: absolute;
+  top:5px;
+  right:-10px;
+}
+.footer_info_top_list > li:last-child:after{
+  content:none;
+}
+.footer_info_top_list > li > a{
+  font-size: 15px;
+  text-decoration: none;
+}
+.footer_info .footer_address,
+.footer_info .footer_copy_right{
+  color:#494949;
+}
+.footer_info .footer_copy_right{
+  margin-top:5px;
+}
+
+.footer_sns .sns_list{
+  overflow: hidden;
+  position:absolute;
+  bottom:30px;
+  right:0;
+}
+.sns_list > li{
+  float:left;
+}
+
+.sns_list > li > a{
+  background: url(../images/footer_sns.png) no-repeat;
+  width:40px;
+  height:40px;
+  display: inline-block;
+  text-indent: -999rem;
+  margin-left:3px;
+}
+.sns_list > li .insta{
+  background-position: 0 0;
+}
+.sns_list > li .fbook{
+  background-position: 0 -40px;
+}
+.sns_list > li .blog{
+  background-position: 0 -80px;
+}
+.sns_list > li .youtube{
+  background-position: 0 -120px;
+}
