@@ -82,7 +82,7 @@ $(function(){
     scrollLeftPos = $(document).scrollLeft();
     scrollTopPos = $(document).scrollTop();
     for(var i=0; i < sections.length; i++){
-      if(htmlWrapWidth < 768){  /* 마우스 휠로는 작동 잘 되는데 스크롤할 때는 768px이하에서 작동되지 않고 있는데.. 어떻게 수정해야할까요.. */
+      if(htmlWrapWidth < 768){  
         if(scrollTopPos<sections.eq(0).offset().top + sections.eq(0).height()){
           changeheaderNavWhite();
           selectSectionLinkBtn(0);
@@ -173,7 +173,7 @@ $(function(){
 
   /* select nav menu */
   var navEachMenuIndex;
-  var navEachMenus = $('.menu_list > yli').children('a');
+  var navEachMenus = $('.menu_list > li').children('a');
   var navSubMenuList = $('.sub_menu_list');
   
   navEachMenus.on('click', function(e){
