@@ -190,7 +190,7 @@ $(function(){
       right:'0px'
     },600);
 
-  }, {passive:false})
+  })
 
   /* product info */
   var productNum=1;

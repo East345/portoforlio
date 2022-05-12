@@ -180,6 +180,7 @@
   padding-left:0px;
 }
 .member_info_wrap input[type="text"],
+.member_info_wrap input[type="tel"],
 .member_info_wrap input[type="password"],
 .member_info_wrap select{
   margin:4px 0;
@@ -206,6 +207,9 @@
   width: 130px;
 }
 .form_input_small{
+  width: 100px;
+}
+.member_info_wrap input[type="tel"]{
   width: 100px;
 }
 
