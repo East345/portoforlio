@@ -75,7 +75,7 @@
   font-weight: 600;
 }
 
-@media only all and (min-width:320px) and (max-width:1024px) {
+@media only all and (min-width:280px) and (max-width:1024px) {
   .footer_wrap{
     width:100%;
   }

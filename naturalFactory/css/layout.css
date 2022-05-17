@@ -18,25 +18,6 @@
 }
 
 
-.sa{
-  opacity: 0;
-  transition: all 1s ease;
-}
-.sa-up {
-  transform: translate(0, 100px);
-}
-.sa-right {
-  transform: translate(-100px, 0);
-}
-.sa-left {
-  transform: translate(100px, 0);
-}
-.sa.show {
-  opacity: 1;
-  transform: none;
-}
-
-
 .section_category{
   padding:4% 0;
 }

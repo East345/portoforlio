@@ -34,7 +34,6 @@
 .visual_list .visual1 > div{
   display: inline-block;
   margin-right:10px;
-  
 }
 .visual_list .visual2 > div{
   display: inline-block;
@@ -117,7 +116,8 @@
     margin-top:-10px;
   }
 }
-.visual_list .each_visual > div > img:not(.sun_rotate>img){
+
+.visual_list .each_visual > div > img{
   vertical-align: bottom;
 }
 .visual_list .each_visual > div.sun_rotate > img{
@@ -126,6 +126,7 @@
   margin-top: -100px;
   animation: rotateImage 5s linear infinite;
   transform-origin: 50% 50%;
+  vertical-align: middle;
 }
 @keyframes rotateImage{
   100%{
@@ -382,13 +383,13 @@
   box-flex: 1;
   -webkit-flex: 1 1 auto;
   flex: 1 1 auto; 
-  width:300px;
+  width:275px;
   height:194px;
   padding:1%;
   display:block;
 }
 .work > a > img{
-  width:300px;
+  width:275px;
   height:194px
 }
 .work .work_text_wrap{
@@ -398,6 +399,8 @@
   -webkit-flex: 1 1 auto;
   flex: 1 1 auto; 
   padding:2%;
+  width:724px;
+  box-sizing: border-box;
 }
 
 .work_text_wrap .work_name{
@@ -422,9 +425,18 @@
   margin-right: 0;
 }
 .work_text_wrap .work_description{
-  font-size: 1.18rem;
+  font-size: 1.25rem;
   margin:20px 0;
-  line-height: 1.6rem;
+  line-height: 1.8rem;
+}
+.work_description > div{
+  font-size: 1.18rem;
+  font-weight: 600;
+  padding: 10px 0 0;
+}
+.work_description > div > span{
+  font-weight: 400;
+  padding: 0 5px 0 3px;
 }
 .work_description > a{
   color: #ff9844;
@@ -557,7 +569,7 @@
   font-size: 1rem;
 }
 
-@media all and (max-width:768px){
+@media all and (max-width:970px){
   .visual_wrap{
     width:100%;
     height:400px;
@@ -641,6 +653,9 @@
   .work.invisible{
     display:none
   }
+  .work .work_text_wrap{
+    width:100%;
+  }
   .work_text_wrap .work_name{
     font-size: 1.4rem;
   }
@@ -652,7 +667,9 @@
     font-size: 1.1rem;
     line-height: 1.6rem;
   }
-
+  .work_description > div{
+    font-size: 1rem;
+  }
   .contact_list > li{
     float:none;
     width:100%;

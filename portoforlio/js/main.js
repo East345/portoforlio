@@ -13,8 +13,8 @@ $(document).ready(function(){
     $('.gnb_').slideUp(400);
     $('.nav_toggle_btn').toggleClass('btn_clicked');
   })
-  const headerNav = $('.header_');
-  const headerNavHeight = headerNav.height();
+  var headerNav = $('.header_');
+  var headerNavHeight = headerNav.height();
   $(window).on('scroll',function(){
     if($(window).scrollTop() > headerNavHeight * 3){
       headerNav.css('position','fixed');
@@ -36,7 +36,6 @@ $(document).ready(function(){
   var visualList = $('.visual_list');
   var pageCode;
   var visualNum=1;
-  const visualElementList = document.querySelectorAll('.visual_text');
   visualArea.on({
     click:function(event){
       
@@ -62,23 +61,6 @@ $(document).ready(function(){
         
       }
       $('.visual_present_page').text(visualNum);
-
-      for(const visualElement of visualElementList){
-        visualElement.classList.remove('show');
-        visualElement.classList.remove('ca');
-        visualElement.classList.remove('ca-left');
-
-        visualElement.classList.add('ca');
-        visualElement.classList.add('ca-left');
-        
-        setTimeout(function(){
-          if(!visualElement.classList.contains('show')){
-            visualElement.classList.add('show')
-          }
-        }, 800)
-      }
-
-      
     },
     mouseenter:function(){
       visualArea.mousemove(function(event){
@@ -101,20 +83,19 @@ $(document).ready(function(){
   
 
   /* scroll Animation */
-  const saTriggerMargin = 80;
-  const saElementList = document.querySelectorAll('.sa');
-  const doScrollAni = function(){
-    for(const saElement of saElementList){
-      if(!saElement.classList.contains('show')){
-        if(window.innerHeight > saElement.getBoundingClientRect().top + saTriggerMargin){
-          let saDelay = (saElement.dataset.saDelay) ? saElement.dataset.saDelay : 0;
-          setTimeout(function(){
-            saElement.classList.add('show')
-          }, saDelay)
+  var saTriggerMargin = 80;
+  var saElementList = $('.sa');
+
+  var doScrollAni = function(){
+    for(var i  = 0; i < saElementList.length; i++){
+      if(saElementList.hasClass('show')=== false){
+        if(window.innerHeight > saElementList[i].getBoundingClientRect().top + saTriggerMargin){
+            saElementList.addClass('show')
         }
       }
     }
   }
+
   window.addEventListener('scroll', doScrollAni);
 
 
@@ -201,19 +182,15 @@ $(document).ready(function(){
       return;
     }
     setTimeout(function(){
-      workProjects.forEach(function(workProject){
-        if(sort == workProject.dataset.type || sort == '*'){
-          workProject.classList.remove('invisible');
+      for(var i=0; i < workProjects.length;i++ ){
+        if(sort == workProjects[i].dataset.type || sort == '*'){
+          workProjects[i].classList.remove('invisible');
         }else{
-          workProject.classList.add('invisible');
+          workProjects[i].classList.add('invisible');
         }
-      })
+      }
       workProjectsContainer.removeClass('workSortingAni');
     }, 300)
 
-
   })
-
-
-
 })

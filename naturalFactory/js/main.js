@@ -6,9 +6,9 @@ window.onload = function(){
   document.querySelector('.header_toggle_btn').onclick = function(e){
     e.preventDefault();
     if(headerNav.className =='nav_ none'){
-      headerNav.classList.remove('none');
+      headerNav.className = 'nav_';
     }else{
-      headerNav.classList.add('none');
+      headerNav.className = 'nav_ none';
     }
   }
 
@@ -91,28 +91,14 @@ for(var i = 0; i < userPageLists.length; i++){
     searchModal.classList.add('none');
   }
 
-  /* scroll animation */
 
-  const saTriggerMargin = 100;
-
-  const saElementList = document.querySelectorAll('.sa');
-
-  const doScrollAni = function(){
-    for(const saElement of saElementList){
-      if(!saElement.classList.contains('show')){
-        if(window.innerHeight > saElement.getBoundingClientRect().top + saTriggerMargin){
-          let saDelay = (saElement.dataset.saDelay) ? saElement.dataset.saDelay : 0;
-          setTimeout(function(){
-            saElement.classList.add('show')
-          }, saDelay)
-          
-        }
-      }
+  /* display best seller*/
+  window.addEventListener('resize', function(){
+    var outWindowWidth = window.outerWidth;
+    if(outWindowWidth < 768){
+      bsLists.style.left = 0;
     }
-  }
-  window.addEventListener('scroll', doScrollAni);
-
-  /* display best seller  수정필요*/
+  });
   var bsListWidth=25;
   var bsLists = document.querySelector('.best_seller_list');
   var bsPrevBtn = document.querySelector('.bs_prev_btn');

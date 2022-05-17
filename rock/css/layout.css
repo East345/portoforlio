@@ -559,7 +559,7 @@
     position:absolute;
     bottom:40px;
     right:40px;
-    background: url(../images/m_program_bg.png) no-repeat 0 0 /130px 130px;
+    background: url(../images/m_program_bg.png) no-repeat 0 0 /cover;
   }
   .section_popupZone{
     width:100%;
@@ -584,5 +584,9 @@
 @media only all and (max-width:319px) {
   .space_text >span:first-child{
     display: none;
+  }
+  .section_program:after{
+    width:100px;
+    height:100px;
   }
 }

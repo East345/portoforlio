@@ -38,13 +38,15 @@ for (var i = 0; i < navbarLists.length; i++) {
   navbarLists[i].onmouseout = function () {
     setNavOffTimeOut = setTimeout(offNav, 200);
   }
-}
-lastSubItem.onblur = function(){
-  offNav(); 
+  lastSubItem.onblur = function(){
+    navbarLists[currentNavNum].className = "nav_item"
+    subMenus[currentNavNum].className = "sub_menu off"
+  }
 }
 
+
 function selectNavMenu(num) {
-  if (num != currentNavNum) {
+  if (num != currentNavNum) { 
     navbarLists[currentNavNum].className = "nav_item"
     subMenus[currentNavNum].className = "sub_menu off"
 
