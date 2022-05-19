@@ -5,7 +5,6 @@
 function clickNav(){
   if( $('.all_category_wrap').hasClass('invisible')){
     $('.all_category_wrap').removeClass('invisible');
-    $('.all_category_wrap').css('left','0px')
   }else{
     $('.all_category_wrap').addClass('invisible');
   }
@@ -110,32 +109,9 @@ $(document).ready(function(){
   function selectMvisual(mvisualNum){
     $('.mvisual_list > li').css('opacity','0.5');
     $('.mvisual_list > li').eq(mvisualNum).css('opacity','1');
-
-/* 
-==================================================================================
-background 이미지가 변경 될 때 화면 번쩍이는걸 제거해야하는데..어떻게 없앨 수 있을까요? 
-==================================================================================*/
-
-/*     $('.mvisual_container').animate({opacity:0.8}, 300, function(){
-      $('.mvisual_container').css({
-        'background-image':'url(images/mvisual_img'+ (mvisualNum + 1) +'.jpg)'
-      }).animate({
-        opacity:1
-      },5000)
-    }) */
-
-/*     $('.mvisual_container').css({
-      'opacity':'0.8',
-      'background-image':'url(images/mvisual_img'+ (mvisualNum+1) +'.jpg)'
-    }).show().animate({opacity:1}, 4000)
- */
     $('.mvisual_container').css({
       'background-image':'url(images/mvisual_img'+ (mvisualNum+1) +'.jpg)'
     })
-
-/* =================================================================== */
-
-
     $('.mvisual_contents > li').hide();
     if($('.mvisual_contents > li').css('display')=="none"){
       $('.mvisual_contents > li:eq('+(mvisualNum)+')').stop().fadeOut(200).fadeIn(500);
@@ -151,7 +127,6 @@ background 이미지가 변경 될 때 화면 번쩍이는걸 제거해야하는
 
     /* $('#mvisual_next_btn').trigger('click') */
   }
-
   sid = setInterval(auto, 5000);
 
 })
@@ -241,14 +216,12 @@ $(document).ready(function(){
   function box2Moving(dir){
     if(dir == 'next'){
       $('.box2_content_list').append($('.box2_content:first'));
-      $('.box2_content_list').append($('.box2_content:first'));
       box2BannerNum++;
       if(box2BannerNum > ($('.box2_content').length)/2  - 1){
         box2BannerNum = 0;
       }
       box2BarControl(box2BannerNum)
     }else{
-      $('.box2_content_list').prepend($('.box2_content:last'));
       $('.box2_content_list').prepend($('.box2_content:last'));
       box2BannerNum--;
       if(box2BannerNum < 0){

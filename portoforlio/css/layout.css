@@ -321,14 +321,14 @@
 
 .sec_work .work_sort_btn_wrap{
   text-align: center;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
 }
 .work_sort_btn_wrap button{
   border:1px solid #222;
   border-radius: 5px;
   background: none;
   padding:5px 8px;
-  margin-right:1%;
+  margin: 0 1% 10px 0;
   font-size: 1.1rem;
   cursor: pointer;
 }

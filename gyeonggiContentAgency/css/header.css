@@ -1,3 +1,4 @@
+@charset "utf-8";
 #wrapper {
   width: 100%;
   min-width: 1240px;
@@ -84,11 +85,15 @@
   margin: 0px auto 10px auto;
   box-sizing: border-box;
 }
-.header_logo_wrap .logo_img {
+.header_logo_wrap > h1{
+  float:left;
+}
+
+.header_logo_wrap > h1 > a {
   display: block;
-  background: url(../images/logo_new.png) no-repeat;
-  background-size: 235px 50px;
-  width: 242px;
+  background: url(../images/justlogo.png) no-repeat;
+  background-size: 104px 50px;
+  width: 104px;
   height: 66px;
   text-indent: -9999px;
 }
@@ -96,9 +101,10 @@
 /* gnb */
 
 .header_logo_wrap .header_nav {
-  width: 900px;
+  width: 800px;
   height:30px;
   margin: 0 auto;
+  text-align: center;
 }
 .header_logo_wrap .header_nav .navbar_menu{
   width: 900px;
@@ -108,8 +114,9 @@
   float: left; 
   font-size: 20px;
   padding-bottom: 10px;
-  padding: 0 40px;
+  margin: 0 40px;
   box-sizing: border-box;
+  
 }
 .header_logo_wrap .header_nav .nav_item > a {
   text-decoration: none;
@@ -122,7 +129,7 @@
 
 .nav_item .sub_menu {
   width: 100%;
-  min-width: 1240px;
+  min-width: 1200px;
   height: auto;
   z-index: 9999;
   background: url(../images/bg_sitemap.jpg) no-repeat -1710px 0;
@@ -145,7 +152,7 @@
 
 
 .sub_menu .tm {
-  width:1240px;
+  width:1200px;
   height: auto;
   box-sizing: border-box;
   float:left;

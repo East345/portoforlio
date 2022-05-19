@@ -27,7 +27,13 @@ body, input, select{
   font-size: 1rem;
   font-family: 'Nanum', '나눔고딕', '돋움', 'dotum', sans-serif;
 }
-
+body {
+  background: #fff;
+  min-width: 280px;
+  -webkit-text-size-adjust: none;
+  word-wrap: break-word;
+  word-break: break-all;
+}
 ul, ol{
   list-style: none;
 }

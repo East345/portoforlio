@@ -269,7 +269,7 @@
 }
 
 
-@media all and (max-width:1024px){
+@media all and (max-width:1288px){
   .header_wrap{
     width:100%;
   }
@@ -291,6 +291,3 @@
     cursor: pointer;
   }
 }
-/* @media all and (max-width:320px){
-  
-} */
